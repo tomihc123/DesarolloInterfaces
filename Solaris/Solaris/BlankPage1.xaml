@@ -6,9 +6,119 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="#1C1C1C">
 
-    <Grid>
+    <RelativePanel>
 
-    </Grid>
+        <StackPanel x:Name="stackTitle" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True">
+            <TextBlock x:Name="txtTittleMainPage" HorizontalTextAlignment="Left" Text="Hola de nuevo, Usuario"  Foreground="White" FontWeight="Bold" FontSize="50"/>
+        </StackPanel>
+
+        <Grid Name="btnsCitasHome" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.Below="stackTitle" Margin="0,20,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.05*"/>
+                <ColumnDefinition Width="0.05*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0" HorizontalAlignment="Stretch" Grid.Column="0" Foreground="White" Background="Orange">Citas</Button>
+            <Button Grid.Row="0" HorizontalAlignment="Stretch" Grid.Column="1" Foreground="White">Home</Button>
+            
+        </Grid>
+
+
+            <StackPanel RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.Below="btnsCitasHome" Orientation="Vertical" >
+
+
+                <Grid Background="#0F0F0F" HorizontalAlignment="Center" MinHeight="250" MinWidth="250" Margin="0,20,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.05*"/>
+                        <ColumnDefinition Width="0.05*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical">
+
+                        <TextBlock HorizontalTextAlignment="Left" Foreground="White" Margin="5,5,0,0" FontWeight="Bold" FontSize="30">Lunes</TextBlock>
+                        <TextBlock HorizontalTextAlignment="Left" Foreground="White" Margin="5,5,0,5" FontWeight="Bold" FontSize="30">28/09</TextBlock>
+                        <TextBlock HorizontalTextAlignment="Left" Foreground="White" Margin="5,0,0,5" FontWeight="Bold" FontSize="30">c/Urbion 9</TextBlock>
+                        <TextBlock HorizontalTextAlignment="Left" Foreground="White" Margin="5,0,0,5" FontWeight="Bold" FontSize="30">41403 Sevilla</TextBlock>
+
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical">
+
+                        <CheckBox HorizontalContentAlignment="Right"  Foreground="White"></CheckBox>
+                        <TextBlock HorizontalTextAlignment="Right" Foreground="White" Margin="5,5,10,5" FontWeight="Bold" FontSize="40">9:28</TextBlock>
+
+                    </StackPanel>
+
+                </Grid>
+
+                <Grid Background="#0F0F0F" HorizontalAlignment="Center" MinHeight="250" MinWidth="250" Margin="0,20,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.05*"/>
+                        <ColumnDefinition Width="0.05*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical">
+
+                        <TextBlock HorizontalTextAlignment="Left" Foreground="White" Margin="5,5,0,0" FontWeight="Bold" FontSize="30">Lunes</TextBlock>
+                        <TextBlock HorizontalTextAlignment="Left" Foreground="White" Margin="5,5,0,5" FontWeight="Bold" FontSize="30">28/09</TextBlock>
+                        <TextBlock HorizontalTextAlignment="Left" Foreground="White" Margin="5,0,0,5" FontWeight="Bold" FontSize="30">c/Urbion 9</TextBlock>
+                        <TextBlock HorizontalTextAlignment="Left" Foreground="White" Margin="5,0,0,5" FontWeight="Bold" FontSize="30">41403 Sevilla</TextBlock>
+
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical">
+
+                        <CheckBox HorizontalContentAlignment="Right"  Foreground="White"></CheckBox>
+                        <TextBlock HorizontalTextAlignment="Right" Foreground="White" Margin="5,5,10,5" FontWeight="Bold" FontSize="40">9:28</TextBlock>
+
+                    </StackPanel>
+
+                </Grid>
+
+                <Grid Background="Orange" HorizontalAlignment="Center" MinHeight="250" MinWidth="250" Margin="0,20,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.05*"/>
+                        <ColumnDefinition Width="0.05*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical">
+
+                        <TextBlock HorizontalTextAlignment="Left" Foreground="White" Margin="5,5,0,0" FontWeight="Bold" FontSize="30">Lunes</TextBlock>
+                        <TextBlock HorizontalTextAlignment="Left" Foreground="White" Margin="5,5,0,5" FontWeight="Bold" FontSize="30">28/09</TextBlock>
+                        <TextBlock HorizontalTextAlignment="Left" Foreground="White" Margin="5,0,0,5" FontWeight="Bold" FontSize="30">c/Urbion 9</TextBlock>
+                        <TextBlock HorizontalTextAlignment="Left" Foreground="White" Margin="5,0,0,5" FontWeight="Bold" FontSize="30">41403 Sevilla</TextBlock>
+
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical">
+
+                        <CheckBox HorizontalContentAlignment="Right" Foreground="White"></CheckBox>
+                        <TextBlock HorizontalTextAlignment="Right" Foreground="White" Margin="5,5,10,5" FontWeight="Bold" FontSize="40">9:28</TextBlock>
+
+                    </StackPanel>
+                </Grid>
+
+
+            </StackPanel>
+
+    </RelativePanel>
+  
 </Page>
