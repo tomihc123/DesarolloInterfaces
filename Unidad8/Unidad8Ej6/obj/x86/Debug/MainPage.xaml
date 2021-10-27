@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="Unidad8Ej6.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Unidad8Ej6"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel>
+
+        <StackPanel x:ConnectionId='2' Name="Bar" RelativePanel.AlignTopWithPanel="True"  Orientation="Horizontal" HorizontalAlignment="Left" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True">
+            <AppBarButton x:ConnectionId='10' Name="Anadir"                       Icon="Add"></AppBarButton>
+            <AppBarButton x:ConnectionId='11' Name="Salvar"                       Icon="Save"></AppBarButton>
+            <AppBarButton x:ConnectionId='12' Name="Eliminar"                        Icon="Delete"></AppBarButton>
+            <TextBlock x:ConnectionId='13' Name="MensajeResultado" Margin="0,10,0,0"></TextBlock>
+        </StackPanel>
+
+        <Grid x:ConnectionId='3' Name="Cuestionario" RelativePanel.Below="Bar" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="0.06*"/>
+                <ColumnDefinition Width="0.04*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <TextBlock Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Right" VerticalAlignment="Center" Text="Nombre:" Margin="10,0,0,0"></TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Right" VerticalAlignment="Center" Text="Apellidos:" Margin="10,0,0,0"></TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Right" VerticalAlignment="Center" Text="Fecha:" Margin="10,0,0,0"></TextBlock>
+
+
+            <TextBox x:ConnectionId='4' Name="Nombre" Grid.Row="0" Grid.Column="1" Margin="10,0,0,10"></TextBox>
+            <TextBox x:ConnectionId='5' Name="Apellidos" Grid.Row="1" Grid.Column="1" Margin="10,0,0,10"></TextBox>
+            <TextBox x:ConnectionId='6' Name="Fecha" Grid.Row="2" Grid.Column="1" Margin="10,0,0,10"></TextBox>
+
+            <TextBlock x:ConnectionId='7' x:Name="MensajeNombre" Grid.Row="0" Grid.Column="2" Margin="10,0,0,0"></TextBlock>
+            <TextBlock x:ConnectionId='8' x:Name="MensajeApellido"  Grid.Row="1" Grid.Column="2" Margin="10,0,0,0"></TextBlock>
+            <TextBlock x:ConnectionId='9' x:Name="MensajeFecha"  Grid.Row="2" Grid.Column="2" Margin="10,0,0,0"></TextBlock>
+
+        </Grid>
+
+    </RelativePanel>
+    
+</Page>
+
