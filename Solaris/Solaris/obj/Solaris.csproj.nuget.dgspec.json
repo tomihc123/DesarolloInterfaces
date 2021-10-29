@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Solaris\\Solaris\\Solaris.csproj": {}
+    "C:\\Users\\thuecas\\source\\repos\\Solaris\\Solaris\\Solaris.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Solaris\\Solaris\\Solaris.csproj": {
+    "C:\\Users\\thuecas\\source\\repos\\Solaris\\Solaris\\Solaris.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Solaris\\Solaris\\Solaris.csproj",
+        "projectUniqueName": "C:\\Users\\thuecas\\source\\repos\\Solaris\\Solaris\\Solaris.csproj",
         "projectName": "Solaris",
-        "projectPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Solaris\\Solaris\\Solaris.csproj",
-        "packagesPath": "C:\\Users\\TxHxTxHxT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Solaris\\Solaris\\obj\\",
+        "projectPath": "C:\\Users\\thuecas\\source\\repos\\Solaris\\Solaris\\Solaris.csproj",
+        "packagesPath": "C:\\Users\\thuecas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thuecas\\source\\repos\\Solaris\\Solaris\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -20,7 +20,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\TxHxTxHxT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thuecas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"

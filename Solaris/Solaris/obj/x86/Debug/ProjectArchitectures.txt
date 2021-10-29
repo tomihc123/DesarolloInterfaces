@@ -1,1 +1,1 @@
-C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Solaris\Solaris\Solaris.csproj;x86
+C:\Users\thuecas\source\repos\Solaris\Solaris\Solaris.csproj;x86
