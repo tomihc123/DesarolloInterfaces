@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Ejercicio4.Models
+namespace Entidades
 {
-    class clsPersona
+    public class clsPersona
     {
-
         #region Properties 
         public string name { get; set; }
         public string lastName { get; set; }
@@ -17,12 +12,11 @@ namespace Ejercicio4.Models
         public string address { get; set; }
         #endregion
 
-
         #region Constructors 
         //Constructor por defecto
         public clsPersona()
         {
-            this.name = "Tomi";
+            this.name = "John";
 
         }
 
@@ -38,12 +32,11 @@ namespace Ejercicio4.Models
         }
         #endregion
 
-
         public override string ToString()
         {
             return name;
         }
-
-
     }
+
+
 }

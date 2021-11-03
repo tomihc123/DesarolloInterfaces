@@ -37,7 +37,7 @@
 
 
             <TextBlock x:ConnectionId='4' x:Name="tbName" Text="Name" Grid.Column="0" Grid.Row="0" Margin="5"/>
-            <TextBox x:ConnectionId='5' Name="tbxName" Text="{Binding Path=SelectedPerson.name}" Grid.Column="1" Grid.Row="0" Margin="5"/>
+            <TextBox x:ConnectionId='5' Name="tbxName" Text="{Binding Path=SelectedPerson.name}"  Grid.Column="1" Grid.Row="0" Margin="5"/>
 
             <TextBlock x:ConnectionId='6' x:Name="tbLastName" Text="LastName" Grid.Column="0" Grid.Row="1"  Margin="5"/>
             <TextBox x:ConnectionId='7' Name="tbxLastname" Text="{Binding Path=SelectedPerson.lastName}" Grid.Column="1" Grid.Row="1" Margin="5"/>

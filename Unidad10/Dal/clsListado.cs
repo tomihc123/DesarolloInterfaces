@@ -1,15 +1,15 @@
-﻿using System;
+﻿using Entidades;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio4.Models
+namespace Dal
 {
-    class clsListado
+    public class clsListado
     {
-
         public ObservableCollection<clsPersona> getListado()
         {
 
@@ -33,6 +33,5 @@ namespace Ejercicio4.Models
 
 
         }
-
     }
 }

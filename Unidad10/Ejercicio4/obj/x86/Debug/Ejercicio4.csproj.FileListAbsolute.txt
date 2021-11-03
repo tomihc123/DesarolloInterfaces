@@ -42,3 +42,12 @@ C:\Users\thuecas\source\repos\Unidad10\Ejercicio4\obj\x86\Debug\qualifiers.txt.i
 C:\Users\thuecas\source\repos\Unidad10\Ejercicio4\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\thuecas\source\repos\Unidad10\Ejercicio4\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\thuecas\source\repos\Unidad10\Ejercicio4\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
+C:\Users\thuecas\source\repos\Unidad10\Ejercicio4\bin\x86\Debug\Dal.dll
+C:\Users\thuecas\source\repos\Unidad10\Ejercicio4\bin\x86\Debug\Entidades.dll
+C:\Users\thuecas\source\repos\Unidad10\Ejercicio4\bin\x86\Debug\Dal.pdb
+C:\Users\thuecas\source\repos\Unidad10\Ejercicio4\bin\x86\Debug\Dal.pri
+C:\Users\thuecas\source\repos\Unidad10\Ejercicio4\bin\x86\Debug\Entidades.pdb
+C:\Users\thuecas\source\repos\Unidad10\Ejercicio4\bin\x86\Debug\Entidades.pri
+C:\Users\thuecas\source\repos\Unidad10\Ejercicio4\obj\x86\Debug\Ejercicio4.csproj.CopyComplete
+C:\Users\thuecas\source\repos\Unidad10\Ejercicio4\obj\x86\Debug\Dal.pri.xml
+C:\Users\thuecas\source\repos\Unidad10\Ejercicio4\obj\x86\Debug\Entidades.pri.xml
