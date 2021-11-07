@@ -28,6 +28,8 @@ namespace Entidades
             ciudad = "Sevilla";
         }
 
+
+        //Constructor con parametros
         public clsCita(string diaSemana, string fecha, string hora, string calle, int codigoPostal, string ciudad, double longitud, double latitud)
         {
             this.diaSemana = diaSemana;

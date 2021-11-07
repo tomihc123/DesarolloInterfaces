@@ -17,12 +17,12 @@
     <RelativePanel>
 
         <StackPanel x:ConnectionId='2' x:Name="stackTitle" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True">
-            <TextBlock x:ConnectionId='8' x:Name="txtTittleMainPage" HorizontalTextAlignment="Left"  Foreground="White" FontWeight="Bold" FontSize="50"/>
+            <TextBlock x:ConnectionId='10' x:Name="txtTittleMainPage" HorizontalTextAlignment="Left"  Foreground="White" FontWeight="Bold" FontSize="50"/>
         </StackPanel>
 
         <Grid x:ConnectionId='3' Name="btnsCitasHome" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.Below="stackTitle" Margin="0,20,0,0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -41,7 +41,7 @@
                 <DataTemplate>
                     <Grid Background="#0F0F0F" HorizontalAlignment="Center" MinHeight="250" MinWidth="350" Margin="0,20,0,0">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="0.01*"/>
                         </Grid.RowDefinitions>
 
                         <Grid.ColumnDefinitions>
@@ -59,8 +59,7 @@
                         </StackPanel>
 
                         <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical">
-
-                            <CheckBox HorizontalContentAlignment="Right"  Foreground="White"></CheckBox>
+                            
                             <TextBlock Text="{Binding hora}" HorizontalTextAlignment="Right" Foreground="White" Margin="5,5,10,5" FontWeight="Bold" FontSize="40"></TextBlock>
 
                         </StackPanel>
@@ -79,15 +78,14 @@
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.05*"/>
-                <ColumnDefinition Width="0.05*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <Maps:MapControl x:ConnectionId='6' HorizontalAlignment="Left" Grid.Row="0"  Visibility="Visible"                       Grid.Column="0" Name="MyMap" Width="300" Height="300" MaxWidth="400" Margin="100,50,0,0" MaxHeight="400" RelativePanel.RightOf="Citas" RelativePanel.Below="btnsCitasHome"></Maps:MapControl>
+            <Maps:MapControl x:ConnectionId='8' HorizontalAlignment="Left" Grid.Row="0"  Visibility="Visible"                       Grid.Column="0" Name="MyMap" Width="300" Height="300" MaxWidth="400" Margin="100,50,0,0" MaxHeight="400" RelativePanel.RightOf="Citas" RelativePanel.Below="btnsCitasHome"></Maps:MapControl>
             <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
 
                 <TextBlock Margin="100,50,0,0" Text="{Binding CitaSeleccionada.diaSemana}" HorizontalTextAlignment="Left" Foreground="White" FontWeight="Bold" FontSize="30"></TextBlock>
@@ -97,10 +95,19 @@
 
             </StackPanel>
 
-            <TextBox Margin="100,20,0,0" HorizontalAlignment="Stretch" Background="White" MinHeight="100" Grid.Row="1" Grid.ColumnSpan="2"></TextBox>
-            
         </Grid>
-        
+
+
+        <TextBox x:ConnectionId='6' Name="Notas" Margin="130,30,0,0" PlaceholderText="Escribe tus notas aqui!!" RelativePanel.Below="Detalles" MaxHeight="90" RelativePanel.AlignLeftWith="Detalles" RelativePanel.AlignRightWith="Detalles" TextWrapping="Wrap" AcceptsReturn="True" Background="White" MinHeight="100" Grid.Row="1" Grid.ColumnSpan="2"></TextBox>
+
+        <StackPanel x:ConnectionId='7' Margin="130,30,0,0" Name="gridImages" RelativePanel.Below="Notas" Orientation="Horizontal" HorizontalAlignment="Left" RelativePanel.AlignLeftWith="Detalles" RelativePanel.AlignRightWith="Detalles" RelativePanel.AlignHorizontalCenterWithPanel="True">
+
+            <Image Source="Assets/Images/house1.jpg"  MaxWidth="200" Margin="10"/>
+            <Image Source="Assets/Images/house2.jpg"  MaxWidth="200"/>
+            <Image Source="Assets/Images/anadir.png"  MaxWidth="100"/>
+        </StackPanel>
+
+
     </RelativePanel>
 
 </Page>

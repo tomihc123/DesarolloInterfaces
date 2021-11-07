@@ -35,15 +35,12 @@ namespace Solaris
 
             
         }
-        private async void GeMyLocation_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            var geolocator = new Geolocator();
-            var position = await geolocator.GetGeopositionAsync();
 
-            var mapLocation = await MapLocationFinder.FindLocationsAtAsync(position.Coordinate.Point);
-     
-        }
-
+        /// <summary>
+        /// Funcion asincrona que hace cargar el mapa, dentro le indicamos el token que necesitamos, la longitud, latitud
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void MyMap_Loaded(object sender, RoutedEventArgs e)
         {
             if (MyMap.Is3DSupported)
@@ -71,6 +68,11 @@ namespace Solaris
                 await MyMap.TrySetSceneAsync(mapScene);
             }
         }
+
+        /// <summary>
+        /// Esta funcion recoge el nombre del usuario que hemos usado al logearnos para mostrarlo en la pagina de citas
+        /// </summary>
+        /// <param name="e"></param>
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {

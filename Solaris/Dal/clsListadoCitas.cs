@@ -10,6 +10,12 @@ namespace Dal
 {
     public class clsListadoCitas
     {
+        /// <summary>
+        /// Funcion que simula la conexion a una base de datos, devolvera una lista con datos para probar
+        /// </summary>
+        /// <returns>
+        /// ObservableCollections<clsCitas> listado de clsCitas
+        /// </returns>
         public ObservableCollection<clsCita> getListado()
         {
 

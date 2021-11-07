@@ -106,3 +106,4 @@ C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Solaris\Solaris\obj\x86\Debug\Pro
 C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Solaris\Solaris\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
 C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\GMapsUWP.dll
 C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Solaris\Solaris\obj\x86\Debug\Solaris.csproj.CopyComplete

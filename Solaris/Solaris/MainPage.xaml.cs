@@ -27,6 +27,12 @@ namespace Solaris
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// Evento asociado al boton login, comprueba que tanto el username como la contraseña  no estan vacios y si no lo estan te redirecciona a la pagina de citas
+        /// En caso de que alguno de estos campos este vacio te muestra un mensaje de error
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
 

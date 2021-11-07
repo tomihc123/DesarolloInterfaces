@@ -15,10 +15,12 @@ namespace Solaris.ViewModels
     public class CitasPageViewModel : INotifyPropertyChanged
     {
 
+        #region
+        //Propiedades
         public event PropertyChangedEventHandler PropertyChanged;
         private clsCita citaSeleccionada = new clsCita();
         private ObservableCollection<clsCita> citaLista;
-
+        #endregion
 
 
 
