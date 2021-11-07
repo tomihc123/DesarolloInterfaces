@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "oEsaS+JqSCAB+aXOcdTfsgFKI47ZDrgXCjZBd4Sl2ofoqRqKKKJdbrvZXCdHuEjjFLfKU13lfgFYDkfkWHKvxA==",
+  "dgSpecHash": "iQZfax2NIP/F4QIL35fulOoSwNMvi4aK6ItsxgiawRdtbi6Nh1hyvNCvMkK6S+0lBw47xAo28Let0Nw1gjG9bw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thuecas\\source\\repos\\Unidad10\\Dal\\Dal.csproj",
+  "projectFilePath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Unidad10\\Dal\\Dal.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.10-rel-29722-00\\microsoft.net.native.compiler.2.2.10-rel-29722-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.12\\microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.universalwindowsplatform\\6.2.12\\microsoft.netcore.universalwindowsplatform.6.2.12.nupkg.sha512",
-    "C:\\Users\\thuecas\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform\\6.2.12\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.2.12.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm.microsoft.net.native.compiler\\2.2.10-rel-29722-00\\runtime.win10-arm.microsoft.net.native.compiler.2.2.10-rel-29722-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm.microsoft.net.native.sharedlibrary\\2.2.8-rel-29722-00\\runtime.win10-arm.microsoft.net.native.sharedlibrary.2.2.8-rel-29722-00.nupkg.sha512",

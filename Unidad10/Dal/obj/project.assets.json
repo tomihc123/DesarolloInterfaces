@@ -8269,7 +8269,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thuecas\\.nuget\\packages\\": {},
+    "C:\\Users\\TxHxTxHxT\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
@@ -8277,11 +8277,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thuecas\\source\\repos\\Unidad10\\Dal\\Dal.csproj",
+      "projectUniqueName": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Unidad10\\Dal\\Dal.csproj",
       "projectName": "Dal",
-      "projectPath": "C:\\Users\\thuecas\\source\\repos\\Unidad10\\Dal\\Dal.csproj",
-      "packagesPath": "C:\\Users\\thuecas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thuecas\\source\\repos\\Unidad10\\Dal\\obj\\",
+      "projectPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Unidad10\\Dal\\Dal.csproj",
+      "packagesPath": "C:\\Users\\TxHxTxHxT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Unidad10\\Dal\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -8290,7 +8290,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\thuecas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TxHxTxHxT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -8305,8 +8305,8 @@
       "frameworks": {
         "uap10.0.17763": {
           "projectReferences": {
-            "C:\\Users\\thuecas\\source\\repos\\Unidad10\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\thuecas\\source\\repos\\Unidad10\\Entidades\\Entidades.csproj"
+            "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Unidad10\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Unidad10\\Entidades\\Entidades.csproj"
             }
           }
         }

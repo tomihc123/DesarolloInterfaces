@@ -38,7 +38,7 @@ namespace Solaris
             }
             else
             {
-                Frame.Navigate(typeof(BlankPage1));
+                Frame.Navigate(typeof(PageCitas), tbxUsername.Text);
             }
 
 

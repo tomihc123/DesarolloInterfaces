@@ -1,14 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="CitaSeleccionada" />
+    <RootPropertyPathName Name="ciudad" />
+    <RootPropertyPathName Name="calle" />
+    <RootPropertyPathName Name="fecha" />
+    <RootPropertyPathName Name="diaSemana" />
+    <RootPropertyPathName Name="CitaLista" />
+    <RootPropertyPathName Name="hora" />
+  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
+      <RootProperty Name="DataContext" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Grid" />
-    <RootType FullName="Solaris.BlankPage1" />
     <RootType FullName="Windows.UI.Xaml.Media.LinearGradientBrush">
       <RootProperty Name="EndPoint" />
       <RootProperty Name="StartPoint" />
@@ -41,6 +48,7 @@
       <RootProperty Name="Name" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="MinWidth" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Name" />
@@ -65,6 +73,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
@@ -76,6 +85,7 @@
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="MinHeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="MinWidth" />
@@ -87,5 +97,59 @@
       <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="Solaris.MainPage" />
+    <RootType FullName="Solaris.ViewModels.CitasPageViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="MinWidth" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
+      <RootProperty Name="Name" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="MaxWidth" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MaxHeight" />
+      <RootEvent Name="Loaded" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="Solaris.PageCitas" />
   </Roots.RootTypes>
 </Roots>

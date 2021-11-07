@@ -1,1 +1,4 @@
-C:\Users\thuecas\source\repos\Solaris\Solaris\Solaris.csproj;x86
+C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Solaris\Dal\Dal.csproj;x86
+C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Solaris\Entidades\Entidades.csproj;x86
+C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Solaris\Entidades\Entidades.csproj;x86
+C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Solaris\Solaris\Solaris.csproj;x86
