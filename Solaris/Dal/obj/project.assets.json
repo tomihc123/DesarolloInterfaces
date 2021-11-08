@@ -18760,7 +18760,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TxHxTxHxT\\.nuget\\packages\\": {},
+    "C:\\Users\\thuecas\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
@@ -18768,11 +18768,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Solaris\\Dal\\Dal.csproj",
+      "projectUniqueName": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Solaris\\Dal\\Dal.csproj",
       "projectName": "Dal",
-      "projectPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Solaris\\Dal\\Dal.csproj",
-      "packagesPath": "C:\\Users\\TxHxTxHxT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Solaris\\Dal\\obj\\",
+      "projectPath": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Solaris\\Dal\\Dal.csproj",
+      "packagesPath": "C:\\Users\\thuecas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Solaris\\Dal\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -18781,7 +18781,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\TxHxTxHxT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thuecas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -18796,8 +18796,8 @@
       "frameworks": {
         "uap10.0.17763": {
           "projectReferences": {
-            "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Solaris\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Solaris\\Entidades\\Entidades.csproj"
+            "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Solaris\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Solaris\\Entidades\\Entidades.csproj"
             }
           }
         }
