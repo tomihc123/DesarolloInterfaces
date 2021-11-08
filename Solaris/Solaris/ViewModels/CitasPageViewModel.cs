@@ -23,7 +23,9 @@ namespace Solaris.ViewModels
         #endregion
 
 
-
+        /// <summary>
+        /// Getters y setters de citaSeleccionada
+        /// </summary>
         public clsCita CitaSeleccionada
         {
 
@@ -42,7 +44,9 @@ namespace Solaris.ViewModels
 
         }
 
-
+        /// <summary>
+        /// Devuelve la lisa de citas para que la vista la bindee
+        /// </summary>
         public ObservableCollection<clsCita> CitaLista
         {
 
@@ -53,13 +57,19 @@ namespace Solaris.ViewModels
 
         }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public CitasPageViewModel()
         {
             clsListadoCitas clsListado = new clsListadoCitas();
             citaLista = clsListado.getListado();
         }
 
-
+        /// <summary>
+        /// Este metodo se invoca en el set de las propiedades para cuando haya cambiado el valor que lo notifique
+        /// </summary>
+        /// <param name="propertyName"></param>
         public void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

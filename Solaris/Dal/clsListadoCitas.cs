@@ -11,7 +11,9 @@ namespace Dal
     public class clsListadoCitas
     {
         /// <summary>
+        /// Entrada: Ninguna
         /// Funcion que simula la conexion a una base de datos, devolvera una lista con datos para probar
+        /// Postcondiciones: Devolvera la lista con los datos que hemos puesto por defecto
         /// </summary>
         /// <returns>
         /// ObservableCollections<clsCitas> listado de clsCitas

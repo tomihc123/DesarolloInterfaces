@@ -166,3 +166,8 @@ C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\obj\x86\Debug\quali
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\UserSettings.xbf
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\obj\x86\Debug\UserSettings.g.i.cs
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\obj\x86\Debug\UserSettings.g.cs
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\obj\x86\Debug\UserSettings.xaml
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\obj\x86\Debug\UserSettings.xbf

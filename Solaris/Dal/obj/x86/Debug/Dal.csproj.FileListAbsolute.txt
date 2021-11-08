@@ -63,7 +63,6 @@ C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Dal\bin\x86\Debug\Entidades
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Dal\bin\x86\Debug\Entidades.pri
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Dal\obj\x86\Debug\Dal.csproj.AssemblyReference.cache
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Dal\obj\x86\Debug\Dal.csproj.CoreCompileInputs.cache
-C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Dal\obj\x86\Debug\Dal.csproj.CopyComplete
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Dal\obj\x86\Debug\Entidades.pri.xml
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Dal\obj\x86\Debug\Dañ.dll
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Dal\obj\x86\Debug\Dañ.pdb

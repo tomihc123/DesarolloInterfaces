@@ -3,6 +3,8 @@ Assets\Images\anadir.png
 Assets\Images\house1.jpg
 Assets\Images\house2.jpg
 Assets\Images\SolarizFondo.jpg
+Assets\Images\user.png
+Assets\Images\usuario.jpg
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -14,4 +16,5 @@ App.xbf
 MainPage.xbf
 PageCitas.xbf
 Solaris.xr.xml
+UserSettings.xbf
 Properties\Default.rd.xml

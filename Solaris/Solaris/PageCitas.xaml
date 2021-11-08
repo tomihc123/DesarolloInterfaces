@@ -31,11 +31,11 @@
             </Grid.ColumnDefinitions>
 
             <Button Grid.Row="0" HorizontalAlignment="Stretch" Grid.Column="0" Foreground="White" Background="Orange">Citas</Button>
-            <Button Grid.Row="0" HorizontalAlignment="Stretch" Grid.Column="1" Foreground="White">Home</Button>
+            <Button Grid.Row="0" Click="ButtonSetttings_Click" HorizontalAlignment="Stretch" Grid.Column="1" Foreground="White">Configuracion</Button>
 
         </Grid>
 
-        <ListView x:Name="Citas" Margin="0,20,0,0" ItemsSource="{Binding Path=CitaLista}" SelectedItem="{Binding Path=CitaSeleccionada, Mode=TwoWay}" HorizontalAlignment="Left" RelativePanel.AlignLeftWithPanel="True" RelativePanel.Below="btnsCitasHome">
+        <ListView x:Name="Citas" ItemsSource="{Binding Path=CitaLista}" SelectedItem="{Binding Path=CitaSeleccionada, Mode=TwoWay}" HorizontalAlignment="Left" RelativePanel.AlignLeftWithPanel="True" RelativePanel.Below="btnsCitasHome">
 
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -74,7 +74,7 @@
 
     
             
-            <Grid x:Name="Detalles" RelativePanel.RightOf="Citas" RelativePanel.Below="btnsCitasHome" Margin="40,40,0,0">
+            <Grid x:Name="Detalles" RelativePanel.RightOf="Citas" RelativePanel.Below="btnsCitasHome" Margin="40,0  ,0,0">
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -85,7 +85,7 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
-                <Maps:MapControl HorizontalAlignment="Left" Grid.Row="0"  Visibility="Visible" Loaded="MyMap_Loaded" Grid.Column="0" Name="MyMap" Width="200" Height="200" MaxWidth="400" Margin="100,50,0,0" MaxHeight="400" RelativePanel.RightOf="Citas" RelativePanel.Below="btnsCitasHome"></Maps:MapControl>
+                <Maps:MapControl HorizontalAlignment="Left" Grid.Row="0"  Visibility="Visible" Loaded="MyMap_Loaded" Grid.Column="0" Name="MyMap" Width="250" Height="250" MaxWidth="400" Margin="100,50,0,0" MaxHeight="400" RelativePanel.RightOf="Citas" RelativePanel.Below="btnsCitasHome"></Maps:MapControl>
                 <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
 
                     <TextBlock Margin="100,50,0,0" Text="{Binding CitaSeleccionada.diaSemana}" HorizontalTextAlignment="Left" Foreground="White" FontWeight="Bold" FontSize="30"></TextBlock>
@@ -99,6 +99,15 @@
 
 
         <TextBox Name="Notas" Margin="130,30,0,0" PlaceholderText="Escribe tus notas aqui!!" RelativePanel.Below="Detalles" MaxHeight="90" RelativePanel.AlignLeftWith="Detalles" RelativePanel.AlignRightWith="Detalles" TextWrapping="Wrap" AcceptsReturn="True" Background="White" MinHeight="100"></TextBox>
+
+        <StackPanel Orientation="Horizontal" RelativePanel.AlignLeftWith="Detalles" Margin="90,10,0,0" RelativePanel.Below="Notas">
+
+            <Button Name="btnDetalles" Click="btnDetalles_Click" Content="Confirmar" HorizontalAlignment="Left" CornerRadius="20" Background="White" FontWeight="Bold" FontSize="15" Padding="10" Margin="40,0,0,0"/>
+
+            <TextBlock Name="txtMensaje" HorizontalAlignment="Right" FontSize="20" TextWrapping="Wrap" FontWeight="ExtraBold" Foreground="Green" Margin="30,10"/>
+
+
+        </StackPanel>
 
         <StackPanel Margin="130,50,0,0" Name="stackImages" RelativePanel.Below="btnsCitasHome" Orientation="Vertical" HorizontalAlignment="Left"  RelativePanel.RightOf="Detalles" RelativePanel.AlignHorizontalCenterWithPanel="True">
 

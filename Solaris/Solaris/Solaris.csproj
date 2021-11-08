@@ -126,6 +126,9 @@
       <DependentUpon>PageCitas.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserSettings.xaml.cs">
+      <DependentUpon>UserSettings.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\CitasPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +141,8 @@
     <Content Include="Assets\Images\house1.jpg" />
     <Content Include="Assets\Images\house2.jpg" />
     <Content Include="Assets\Images\SolarizFondo.jpg" />
+    <Content Include="Assets\Images\user.png" />
+    <Content Include="Assets\Images\usuario.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -157,6 +162,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="PageCitas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

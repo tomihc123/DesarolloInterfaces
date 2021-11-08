@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-11-08T11:02:16.023</Modified>
+      <Modified>2021-11-08T13:28:17.637</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\Solaris.exe">
       <PackagePath>entrypoint\Solaris.exe</PackagePath>
-      <Modified>2021-11-08T11:02:15.280</Modified>
+      <Modified>2021-11-08T13:28:16.890</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\gmapsuwpsdk\2.2.0\lib\netcore50\GMapsUWP.dll">
       <PackagePath>GMapsUWP.dll</PackagePath>
@@ -52,7 +52,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Dal\bin\x86\Debug\Dañ.dll">
       <PackagePath>Dañ.dll</PackagePath>
-      <Modified>2021-11-08T10:51:09.248</Modified>
+      <Modified>2021-11-08T12:59:32.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Entidades\bin\x86\Debug\Entidades.dll">
       <PackagePath>Entidades.dll</PackagePath>
@@ -65,6 +65,10 @@
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\Assets\Images\anadir.png">
       <PackagePath>Assets\Images\anadir.png</PackagePath>
       <Modified>2021-11-08T10:50:31.174</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\Assets\Images\user.png">
+      <PackagePath>Assets\Images\user.png</PackagePath>
+      <Modified>2021-11-08T11:15:50.879</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -112,25 +116,33 @@
       <PackagePath>Assets\Images\SolarizFondo.jpg</PackagePath>
       <Modified>2021-11-08T10:50:31.174</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\Assets\Images\usuario.jpg">
+      <PackagePath>Assets\Images\usuario.jpg</PackagePath>
+      <Modified>2021-11-08T11:11:45.620</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2021-11-08T10:50:31.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\Solaris.xr.xml">
       <PackagePath>Solaris.xr.xml</PackagePath>
-      <Modified>2021-11-08T10:57:55.373</Modified>
+      <Modified>2021-11-08T12:18:33.866</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-11-08T11:02:15.225</Modified>
+      <Modified>2021-11-08T13:28:16.837</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-11-08T11:02:15.226</Modified>
+      <Modified>2021-11-08T13:28:16.837</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\PageCitas.xbf">
       <PackagePath>PageCitas.xbf</PackagePath>
-      <Modified>2021-11-08T11:02:15.225</Modified>
+      <Modified>2021-11-08T13:28:16.835</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\UserSettings.xbf">
+      <PackagePath>UserSettings.xbf</PackagePath>
+      <Modified>2021-11-08T13:28:16.838</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -138,11 +150,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-11-08T10:51:14.060</Modified>
+      <Modified>2021-11-08T11:46:53.959</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\Core\Solaris.exe">
       <PackagePath>Solaris.exe</PackagePath>
-      <Modified>2021-11-08T11:02:16.020</Modified>
+      <Modified>2021-11-08T13:28:17.635</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

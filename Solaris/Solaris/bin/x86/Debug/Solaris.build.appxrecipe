@@ -49,6 +49,9 @@
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\Assets\Images\anadir.png">
       <PackagePath>Assets\Images\anadir.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\Assets\Images\user.png">
+      <PackagePath>Assets\Images\user.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
@@ -85,6 +88,9 @@
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\Assets\Images\SolarizFondo.jpg">
       <PackagePath>Assets\Images\SolarizFondo.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\Assets\Images\usuario.jpg">
+      <PackagePath>Assets\Images\usuario.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
@@ -99,6 +105,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\PageCitas.xbf">
       <PackagePath>PageCitas.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Solaris\Solaris\bin\x86\Debug\UserSettings.xbf">
+      <PackagePath>UserSettings.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>

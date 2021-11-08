@@ -78,12 +78,36 @@ namespace Solaris
         {
             base.OnNavigatedTo(e);
 
+            if(e != null) {
+
             var parameters = (String)e.Parameter;
 
             txtTittleMainPage.Text = "Bienvenido de nuevo, " + parameters;
 
+            }
+
+
+        }
+        /// <summary>
+        /// Evento asociado al boton Configuracion, al pulsar el usuario le llevara a la pagina de configuracion de su perfil
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonSetttings_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(UserSettings));
+
         }
 
-
+        /// <summary>
+        /// Evento asociado al boton confirmar de los detalles de la cita, unicamente pondra un mensaje diciendo que se
+        /// han guardado los cambios
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnDetalles_Click(object sender, RoutedEventArgs e)
+        {
+            txtMensaje.Text = "Se han guardado los cambios";
+        }
     }
 }
