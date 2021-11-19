@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "5CcQuhmCidRsh2Ozojtc5RQIklnGM1UBNxfq0Cm9KofSl6g25vUe3Kv0bg3H9Ifn2W9sVXCMuBOQdi4n1PcSBw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\Entidades\\Entidades.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\thuecas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\thuecas\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
