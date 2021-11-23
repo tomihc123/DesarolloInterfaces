@@ -1,4 +1,5 @@
 ﻿using Dal.Lists;
+using Dal.Handler;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Entidades;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0xc0a
 
@@ -28,8 +30,10 @@ namespace Uwp
             this.InitializeComponent();
 
             clsPersonListDal cls = new clsPersonListDal();
-
             cls.getPersons();
+            int numero;
+            
+
 
         }
     }

@@ -10,6 +10,10 @@ namespace Dal.Lists
     public class clsPersonListDal
     {
 
+        public clsPersonListDal()
+        {
+
+        }
 
         /// <summary>
         /// Devuelve el listado completo de personas de la base de datos

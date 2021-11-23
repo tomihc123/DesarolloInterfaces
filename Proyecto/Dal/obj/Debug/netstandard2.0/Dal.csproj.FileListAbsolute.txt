@@ -12,3 +12,4 @@ C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.csproj.CoreCompileInputs.cache
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.dll
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.pdb
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.csproj.CopyComplete

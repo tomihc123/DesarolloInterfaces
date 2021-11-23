@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.OData.Edm;
+using NPOI.SS.Util;
+using System;
+using System.Globalization;
 
 namespace Entidades
 {
@@ -20,6 +23,11 @@ namespace Entidades
         //Constructor por defecto
         public clsPerson()
         {
+            name = "tomi";
+            lastName = "el venerable immortal";
+            birthDate = DateTime.Parse("2000-01-01");
+            phoneNumber = "654121212";
+            address = "Avenida";
             iddepartamento = 1;
         }
 
