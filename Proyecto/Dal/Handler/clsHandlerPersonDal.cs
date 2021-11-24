@@ -46,7 +46,7 @@ namespace Dal.Handler
 
         }
 
-        public int deletePerson(clsPerson clsPerson)
+        public int updatePerson(clsPerson clsPerson)
         {
 
             SqlCommand sqlCommand = new SqlCommand();
@@ -68,7 +68,7 @@ namespace Dal.Handler
 
 
 
-                sqlCommand.CommandText = "UPDATE Persons SET name = @name, lastName = @lastName, birthDate = @birthDate, phoneNumber = @phoneNumber, address = @address, iddepartamento = @iddepartamento WHERE id = @id ";
+                sqlCommand.CommandText = "UPDATE Persons SET name = @name, lastName = @lastName, birthDate = @birthDate, phoneNumber = @phoneNumber, address = @address, iddepartamento = @iddepartamento WHERE id = @idPersona";
                 sqlCommand.Connection = sqlConnection;
                 rowsAffected = sqlCommand.ExecuteNonQuery();
 

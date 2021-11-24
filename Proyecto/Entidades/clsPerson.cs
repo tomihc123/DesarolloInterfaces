@@ -42,6 +42,19 @@ namespace Entidades
             this.address = address;
             this.iddepartamento = iddepartamento;
         }
+
+
+        //Constructor con parametros
+        public clsPerson(int id, string name, string lastName, DateTime birthDate, string phoneNumber, string address, int iddepartamento)
+        {
+            this.id = id;
+            this.name = name;
+            this.lastName = lastName;
+            this.birthDate = birthDate;
+            this.phoneNumber = phoneNumber;
+            this.address = address;
+            this.iddepartamento = iddepartamento;
+        }
         #endregion
     }
 }

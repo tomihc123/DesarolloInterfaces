@@ -26,14 +26,16 @@ namespace Dal.Lists
             SqlCommand command = new SqlCommand();
             SqlDataReader reader;
             clsPerson person;
-            clsMyConnection connection = new clsMyConnection();
-            SqlConnection myConnection = null;
+            clsMyConnection clsMyConnection = new clsMyConnection();
+            SqlConnection connection = null;
+
+
 
             try
             {
-                myConnection = connection.getConnection();
+                connection = clsMyConnection.getConnection();
                 command.CommandText = "Select * FROM Persons";
-                command.Connection = myConnection;
+                command.Connection = connection;
                 reader = command.ExecuteReader();
 
 
@@ -76,7 +78,7 @@ namespace Dal.Lists
                 }
 
 
-                connection.closeConnection(ref myConnection);
+                clsMyConnection.closeConnection(ref connection);
 
             }
             catch (SqlException)
