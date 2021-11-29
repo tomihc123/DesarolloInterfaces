@@ -10,7 +10,7 @@ namespace BL.Lists
     {
 
 
-        public List<clsDepartament> getDepartaments()
+        public List<clsDepartament> getDepartaments() 
         {
 
             return new clsDepartamentListDal().getDepartaments();

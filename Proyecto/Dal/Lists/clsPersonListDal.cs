@@ -15,6 +15,78 @@ namespace Dal.Lists
 
         }
 
+
+        public clsPerson getPerson(int id)
+        {
+
+
+            SqlCommand command = new SqlCommand();
+            SqlDataReader reader;
+            clsPerson person = null;
+            clsMyConnection clsMyConnection = new clsMyConnection();
+            SqlConnection connection = null;
+
+            try
+            {
+                connection = clsMyConnection.getConnection();
+                command.Parameters.Add("@ID", System.Data.SqlDbType.VarChar).Value = id;
+                command.CommandText = "Select * FROM Persons WHERE ID = @ID";
+                command.Connection = connection;
+                reader = command.ExecuteReader();
+
+
+                //If there are rows in the reader
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+
+                        person = new clsPerson();
+
+                        person.id = (int)reader["id"];
+
+                        person.name = (string)reader["name"];
+
+                        if (reader["lastName"] != DBNull.Value)
+                        {
+                            person.lastName = (string)reader["lastName"];
+                        }
+
+                        if (reader["birthDate"] != System.DBNull.Value)
+                        {
+                            person.birthDate = (DateTime)reader["birthDate"];
+                        }
+
+                        if (reader["phoneNumber"] != DBNull.Value)
+                        {
+                            person.phoneNumber = (string)reader["phoneNumber"];
+                        }
+
+                        if (reader["address"] != DBNull.Value)
+                        {
+                            person.address = (string)reader["address"];
+                        }
+
+                        person.iddepartamento = (int)reader["iddepartamento"];
+
+                    }
+                }
+
+
+                clsMyConnection.closeConnection(ref connection);
+
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+
+
+            return person;
+
+
+        }
+
         /// <summary>
         /// Devuelve el listado completo de personas de la base de datos
         /// </summary>

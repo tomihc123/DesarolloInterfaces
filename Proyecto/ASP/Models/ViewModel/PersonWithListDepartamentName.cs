@@ -25,6 +25,7 @@ namespace ASP.Models
         {
 
             this.departaments = new clsDepartamentListBL().getDepartaments();
+
         }
 
         public PersonWithListDepartamentName(clsPerson clsPerson)

@@ -17,10 +17,13 @@ namespace BL.Lists
 
         }
 
-        public int updatePerson(clsPerson person)
+        public clsPerson getPerson(int id)
         {
-            return new clsHandlerPersonDal().updatePerson(person);
+            return new clsPersonListDal().getPerson(id);
         }
+
+
+
 
     }
 }

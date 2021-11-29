@@ -18,16 +18,24 @@ namespace ASP.Controllers
         public ActionResult Index()
         {
 
-            clsPersonListBL clsPersonListBL = new clsPersonListBL();
-            List<PersonWithDepartamentName> list = new List<PersonWithDepartamentName>();
-            
-            foreach(clsPerson person in clsPersonListBL.getPersons())
+            List<PersonWithDepartamentName> list; 
+
+            try
             {
 
-                list.Add(new PersonWithDepartamentName(person));
+                 list = new List<PersonWithDepartamentName>();
 
-            } 
+                clsPersonListBL clsPersonListBL = new clsPersonListBL();
 
+                foreach (clsPerson person in clsPersonListBL.getPersons())
+                {
+                    list.Add(new PersonWithDepartamentName(person));
+                }
+
+            } catch(Exception)
+            {
+                return View("Error", new ErrorViewModel());
+            }
 
             return View(list);
         }
@@ -35,22 +43,46 @@ namespace ASP.Controllers
         // GET: PersonController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            try
+            {
+                return View(new PersonWithDepartamentName(new clsPersonListBL().getPerson(id)));
+
+            } catch(Exception)
+            {
+                return View("Error", new ErrorViewModel());
+            }
         }
 
         // GET: PersonController/Create
         public ActionResult Create()
         {
-            return View(new PersonWithListDepartamentName());
+
+            try
+            {
+                return View(new PersonWithListDepartamentName());
+
+            }
+            catch (Exception)
+            {
+                return View("Error", new ErrorViewModel());
+            }
+
         }
 
         // POST: PersonController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(clsPerson clsPerson)
         {
 
-            new clsHandlerPersonBL().insertPerson(new clsPerson(collection["name"], collection["lastName"], DateTime.Parse(collection["birthDate"]), collection["phoneNumber"], collection["address"], Int32.Parse(collection["iddepartamento"])));
+            try
+            {
+                new clsHandlerPersonBL().insertPerson(clsPerson);
+
+            } catch (Exception)
+            {
+                return View("Error", new ErrorViewModel());
+            }
 
             return RedirectToAction(nameof(Index));
 
@@ -60,30 +92,37 @@ namespace ASP.Controllers
         public ActionResult Edit(int id)
         {
 
-            clsPersonListBL clsPersonListBL = new clsPersonListBL();
-            PersonWithListDepartamentName personWithListDepartamentName = null;
-            List<clsPerson> lista = clsPersonListBL.getPersons();
-            foreach (clsPerson person in lista)
-            {
 
-                if(person.id == id)
-                {
-                    personWithListDepartamentName = new PersonWithListDepartamentName(person);
-                }
+            try
+            {
+                return View(new PersonWithListDepartamentName(new clsPersonListBL().getPerson(id)));
 
             }
+            catch (Exception)
+            {
+                return View("Error", new ErrorViewModel());
+            }
 
-            return View(personWithListDepartamentName);
+
         }
 
         // POST: PersonController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(clsPerson clsPerson)
         {
 
-            
-            new clsHandlerPersonBL().updatePerson(new clsPerson(id, collection["name"], collection["lastName"], DateTime.Parse(collection["birthDate"]), collection["phoneNumber"], collection["address"], Int32.Parse(collection["iddepartamento"])));
+
+            try
+            {
+                new clsHandlerPersonBL().updatePerson(clsPerson);
+
+            }
+            catch (Exception)
+            {
+                return View("Error", new ErrorViewModel());
+
+            }
 
             return RedirectToAction(nameof(Index));
 
@@ -92,20 +131,19 @@ namespace ASP.Controllers
         // GET: PersonController/Delete/5
         public ActionResult Delete(int id)
         {
-            clsPersonListBL clsPersonListBL = new clsPersonListBL();
-            PersonWithDepartamentName personWithDepartamentName = null;
 
 
-            foreach (clsPerson person in clsPersonListBL.getPersons())
+            try
             {
-                if(person.id == id)
-                {
-                    personWithDepartamentName = new PersonWithDepartamentName(person);
-                }
+                return View(new PersonWithDepartamentName(new clsPersonListBL().getPerson(id)));
+
+            }
+            catch (Exception)
+            {
+                return View("Error", new ErrorViewModel());
 
             }
 
-            return View(personWithDepartamentName);
         }
 
         // POST: PersonController/Delete/5
@@ -113,7 +151,16 @@ namespace ASP.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
         {
-            new clsHandlerPersonBL().deletePerson(id);
+
+            try
+            {
+                new clsHandlerPersonBL().deletePerson(id);
+
+            } catch(Exception)
+            {
+                return View("Error", new ErrorViewModel());
+            }
+
 
             return RedirectToAction(nameof(Index));
 

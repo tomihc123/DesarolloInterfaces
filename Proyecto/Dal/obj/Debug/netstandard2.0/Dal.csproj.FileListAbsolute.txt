@@ -2,9 +2,7 @@ C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\bin\Debug\netstandard2
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\bin\Debug\netstandard2.0\Dal.dll
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\bin\Debug\netstandard2.0\Dal.pdb
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\bin\Debug\netstandard2.0\Entidades.dll
-C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\bin\Debug\netstandard2.0\System.Data.SqlClient.dll
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\bin\Debug\netstandard2.0\Entidades.pdb
-C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\bin\Debug\netstandard2.0\System.Data.SqlClient.xml
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.csproj.AssemblyReference.cache
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.AssemblyInfoInputs.cache
@@ -12,7 +10,6 @@ C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.csproj.CoreCompileInputs.cache
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.dll
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.pdb
-C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.csproj.CopyComplete
 C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Dal\bin\Debug\netstandard2.0\Dal.deps.json
 C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Dal\bin\Debug\netstandard2.0\Dal.dll
 C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Dal\bin\Debug\netstandard2.0\Dal.pdb
