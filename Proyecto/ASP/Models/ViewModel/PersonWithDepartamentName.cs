@@ -18,6 +18,7 @@ namespace ASP.Models
         public DateTime birthDate { get; set; }
         public string phoneNumber { get; set; }
         public string address { get; set; }
+        public string image { get; set; }
         public String departamentname { get; set; }
         #endregion
 
@@ -30,6 +31,7 @@ namespace ASP.Models
             this.birthDate = clsPerson.birthDate;
             this.phoneNumber = clsPerson.phoneNumber;
             this.address = clsPerson.address;
+            this.image = clsPerson.image;
             this.departamentname = new clsDepartamentListBL().getNameDepartamentById(clsPerson.iddepartamento);
 
         }

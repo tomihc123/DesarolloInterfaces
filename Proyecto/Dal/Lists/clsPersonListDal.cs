@@ -67,6 +67,11 @@ namespace Dal.Lists
                             person.address = (string)reader["address"];
                         }
 
+                        if (reader["image"] != DBNull.Value)
+                        {
+                            person.image = (string)reader["image"];
+                        }
+
                         person.iddepartamento = (int)reader["iddepartamento"];
 
                     }
@@ -141,6 +146,11 @@ namespace Dal.Lists
                         if (reader["address"] != DBNull.Value)
                         {
                             person.address = (string)reader["address"];
+                        }
+
+                        if (reader["image"] != DBNull.Value)
+                        {
+                            person.image = (string)reader["image"];
                         }
 
                         person.iddepartamento = (int)reader["iddepartamento"];

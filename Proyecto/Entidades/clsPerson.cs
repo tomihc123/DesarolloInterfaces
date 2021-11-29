@@ -16,6 +16,7 @@ namespace Entidades
         public DateTime birthDate { get; set; }
         public string phoneNumber { get; set; }
         public string address { get; set; }
+        public string image { get; set; }
         public int iddepartamento { get; set; }
         #endregion
 
@@ -33,19 +34,20 @@ namespace Entidades
 
 
         //Constructor con parametros
-        public clsPerson(string name, string lastName, DateTime birthDate, string phoneNumber, string address, int iddepartamento)
+        public clsPerson(string name, string lastName, DateTime birthDate, string phoneNumber, string address, string image, int iddepartamento)
         {
             this.name = name;
             this.lastName = lastName;
             this.birthDate = birthDate;
             this.phoneNumber = phoneNumber;
             this.address = address;
+            this.image = image;
             this.iddepartamento = iddepartamento;
         }
 
 
         //Constructor con parametros
-        public clsPerson(int id, string name, string lastName, DateTime birthDate, string phoneNumber, string address, int iddepartamento)
+        public clsPerson(int id, string name, string lastName, DateTime birthDate, string phoneNumber, string address, string image,  int iddepartamento)
         {
             this.id = id;
             this.name = name;
@@ -53,6 +55,7 @@ namespace Entidades
             this.birthDate = birthDate;
             this.phoneNumber = phoneNumber;
             this.address = address;
+            this.image = image;
             this.iddepartamento = iddepartamento;
         }
         #endregion
