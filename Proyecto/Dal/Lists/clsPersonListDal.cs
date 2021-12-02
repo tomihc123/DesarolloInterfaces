@@ -9,13 +9,22 @@ namespace Dal.Lists
 {
     public class clsPersonListDal
     {
-
+        #region Constructor
         public clsPersonListDal()
         {
 
         }
+        #endregion
 
 
+        #region Methods
+        /// <summary>
+        /// Precondiciones: Ninguna
+        /// Postcondiciones: Que la persona devuelta tenga la misma id que el parametro
+        /// Descripcion: Este metodo te devuelve de la base de datos la persona cuyo id coincide con el parámetro que pasamos al metodo
+        /// </summary>
+        /// <param name="id">La id de la persona que queremos obtener</param>
+        /// <returns>Type: clsPerson La persona de la base de datos</returns>
         public clsPerson getPerson(int id)
         {
 
@@ -28,6 +37,7 @@ namespace Dal.Lists
 
             try
             {
+                //Obtenemos la conexion
                 connection = clsMyConnection.getConnection();
                 command.Parameters.Add("@ID", System.Data.SqlDbType.VarChar).Value = id;
                 command.CommandText = "Select * FROM Persons WHERE ID = @ID";
@@ -35,9 +45,10 @@ namespace Dal.Lists
                 reader = command.ExecuteReader();
 
 
-                //If there are rows in the reader
+                //Si hay filas
                 if (reader.HasRows)
                 {
+                    //Mientras se pueda leer
                     while (reader.Read())
                     {
 
@@ -47,6 +58,7 @@ namespace Dal.Lists
 
                         person.name = (string)reader["name"];
 
+                        //En realidad nunca van a ser nulos porque hacemos las validaciones en el cliente, pero por si acaso
                         if (reader["lastName"] != DBNull.Value)
                         {
                             person.lastName = (string)reader["lastName"];
@@ -93,9 +105,11 @@ namespace Dal.Lists
         }
 
         /// <summary>
-        /// Devuelve el listado completo de personas de la base de datos
+        /// Precondiciones: Ninguna
+        /// Postcondiciones: Tiene que devolver todas las personas
+        /// Descripcion: Devuelve el listado completo de personas de la base de datos
         /// </summary>
-        /// <returns></returns>
+        /// <returns>List<clsPerson> Una lista de con todas las personas de la base de datos</returns>
         public List<clsPerson> getPersons()
         {
 
@@ -116,9 +130,10 @@ namespace Dal.Lists
                 reader = command.ExecuteReader();
 
 
-                //If there are rows in the reader
+                //Si hay filas
                 if (reader.HasRows)
                 {
+                    //Mientras se pueda leer
                     while (reader.Read())
                     {
 
@@ -172,6 +187,6 @@ namespace Dal.Lists
             return personList;
         }
 
-
+        #endregion
     }
 }

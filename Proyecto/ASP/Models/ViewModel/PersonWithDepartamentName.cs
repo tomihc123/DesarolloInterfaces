@@ -8,24 +8,16 @@ using System.Threading.Tasks;
 
 namespace ASP.Models
 {
-    public class PersonWithDepartamentName
+    public class PersonWithDepartamentName : clsPerson
     {
 
         #region Properties 
-
-        public int id { get; set; }
-        [DisplayName("Nombre")]
-        public string name { get; set; }
-        public string lastName { get; set; }
-        public DateTime birthDate { get; set; }
-        public string phoneNumber { get; set; }
-        public string address { get; set; }
-        public string image { get; set; }
+        [DisplayName("Departamento")]
         public String departamentname { get; set; }
         #endregion
 
 
-        public PersonWithDepartamentName(clsPerson clsPerson)
+        public PersonWithDepartamentName(clsPerson clsPerson) : base(clsPerson)
         {
             this.id = clsPerson.id;
             this.name = clsPerson.name;

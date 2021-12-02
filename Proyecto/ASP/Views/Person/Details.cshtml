@@ -4,10 +4,9 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Detalles</h1>
 
 <div>
-    <h4>PersonWithDepartamentName</h4>
     <hr />
 
     <img src="@Model.image" width="150" height="150" style="border-radius: 100px 100px 100px 100px" alt="Sample Photo" />
@@ -52,6 +51,6 @@
     </dl>
 </div>
 <div>
-    @Html.ActionLink("Edit", "Edit", new {  id = Model.id  }) |
-    <a asp-action="Index">Back to List</a>
+    @Html.ActionLink("Editar", "Edit", new {  id = Model.id  }) |
+    <a asp-action="Index">Volver</a>
 </div>

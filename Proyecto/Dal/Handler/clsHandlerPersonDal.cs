@@ -10,6 +10,22 @@ namespace Dal.Handler
     public class clsHandlerPersonDal
     {
 
+        #region  Constructor
+        public clsHandlerPersonDal()
+        {
+
+        }
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Precondiciones: El atributo image del parametro clsPerson en caso de no ser nulo, debe ser una url válida de una imagen
+        /// Postcondiciones: Si se puede realizar correctamente la inserción, la persona se insertara en la base de datos
+        /// Descripcion: Este metodo usa sentencias de sql para insertar la persona
+        /// </summary>
+        /// <param name="clsPerson"> La persona que queremos insertar en la base de datos</param>
+        /// <returns>int Las filas afectadas</returns>
         public int insertPerson(clsPerson clsPerson)
         {
 
@@ -58,6 +74,14 @@ namespace Dal.Handler
 
         }
 
+
+        /// <summary>
+        /// Precondiciones: El atributo image del parametro clsPerson en caso de no ser nulo, debe ser una url válida de una imagen
+        /// Postcondiciones: Si se puede realizar correctamente la actualización, la persona se actualizara en la base de datos
+        /// Descripcion: Este metodo usa sentencias de sql para actualizar la persona
+        /// </summary>
+        /// <param name="clsPerson"> La persona que queremos actualizar en la base de datos</param>
+        /// <returns>int Las filas afectadas</returns>
         public int updatePerson(clsPerson clsPerson)
         {
 
@@ -110,7 +134,14 @@ namespace Dal.Handler
         }
 
 
-
+        /// <summary>
+        /// Precondiciones: La id debe existir en la base de datos
+        /// Postcondiciones: Si se puede realizar correctamente la eliminación, la persona cuya id es la pasado por parámetro se eliminara en la base de datos
+        /// Descripcion: Este metodo usa sentencias de sql para eliminar la persona
+        /// </summary>
+        /// <param name="id">La id de la persona que queremos eliminar</param>
+        /// <returns>int Las filas afectadas</returns>
+        /// 
         public int deletePerson(int id)
         {
 
@@ -142,7 +173,7 @@ namespace Dal.Handler
 
         }
 
-
+        #endregion
 
     }
 }

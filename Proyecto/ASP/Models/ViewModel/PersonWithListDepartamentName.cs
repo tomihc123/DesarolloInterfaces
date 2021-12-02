@@ -7,19 +7,10 @@ using System.Threading.Tasks;
 
 namespace ASP.Models
 {
-    public class PersonWithListDepartamentName
+    public class PersonWithListDepartamentName : clsPerson
     {
 
-        #region Properties 
-        public int id { get; set; }
-        public string name { get; set; }
-        public string lastName { get; set; }
-        public DateTime birthDate { get; set; }
-        public string phoneNumber { get; set; }
-        public string address { get; set; }
-
-        public string image { get; set; }
-        public int iddepartamento { get; set; }
+        #region
         public List<clsDepartament> departaments{ get; set; }
         #endregion
 
@@ -30,7 +21,7 @@ namespace ASP.Models
 
         }
 
-        public PersonWithListDepartamentName(clsPerson clsPerson)
+        public PersonWithListDepartamentName(clsPerson clsPerson) : base(clsPerson)
         {
             this.name = clsPerson.name;
             this.lastName = clsPerson.lastName;

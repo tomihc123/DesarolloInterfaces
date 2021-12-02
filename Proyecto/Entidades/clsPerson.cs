@@ -11,22 +11,27 @@ namespace Entidades
     {
 
         #region Properties 
-
         public int id { get; set; }
         [Required]
         [StringLength(20, ErrorMessage = "Nombre muy largo")]
+        [DisplayName("Nombre")]
         public string name { get; set; }
         [Required]
         [StringLength(20, ErrorMessage = "Apellido muy largo")]
+        [DisplayName("Apellidos")]
         public string lastName { get; set; }
         [Required]
+        [DisplayName("Fecha de nacimiento")]
         public DateTime birthDate { get; set; }
         [Required]
         [RegularExpression(@"^^(?:6[0-9]|7[1-9])[0-9]{7}$")]
+        [DisplayName("Móvil")]
         public string phoneNumber { get; set; }
         [Required]
         [StringLength(20, ErrorMessage = "Direccion muy larga")]
+        [DisplayName("Dirección")]
         public string address { get; set; }
+        [DisplayName("Url Imagen")]
         public string image { get; set; }
         public int iddepartamento { get; set; }
         #endregion
@@ -35,14 +40,8 @@ namespace Entidades
         //Constructor por defecto
         public clsPerson()
         {
-            name = "tomi";
-            lastName = "el venerable immortal";
-            birthDate = DateTime.Parse("2000-01-01");
-            phoneNumber = "654121212";
-            address = "Avenida";
-            iddepartamento = 1;
-        }
 
+        }
 
         //Constructor con parametros
         public clsPerson(string name, string lastName, DateTime birthDate, string phoneNumber, string address, string image, int iddepartamento)
@@ -54,6 +53,17 @@ namespace Entidades
             this.address = address;
             this.image = image;
             this.iddepartamento = iddepartamento;
+        }
+
+        public clsPerson(clsPerson clsPerson)
+        {
+            this.name = clsPerson.name;
+            this.lastName = clsPerson.lastName;
+            this.birthDate = clsPerson.birthDate;
+            this.phoneNumber = clsPerson.phoneNumber;
+            this.address = clsPerson.address;
+            this.image = clsPerson.image;
+            this.iddepartamento = clsPerson.iddepartamento;
         }
 
 

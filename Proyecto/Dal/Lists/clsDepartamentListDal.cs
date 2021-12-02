@@ -10,7 +10,22 @@ namespace Dal.Lists
     public class clsDepartamentListDal
     {
 
+        #region Constructor
+        public clsDepartamentListDal()
+        {
 
+        }
+        #endregion
+
+
+        #region Methods
+
+        /// <summary>
+        /// Precondiciones: Ninguna
+        /// Postcondiciones: Tiene que devolver todos los departamentos que haya en la base de datos
+        /// Devuelve todos los departamentos de la base de datos
+        /// </summary>
+        /// <returns>List<clsDepartament> Un listado con todos los departamentos de la base de datos</returns>
         public List<clsDepartament> getDepartaments()
         {
 
@@ -62,7 +77,13 @@ namespace Dal.Lists
 
         }
 
-
+        /// <summary>
+        /// Precondiciones: Ninguna
+        /// Postcondiciones: El departamento cuya id es el parametro pasado, debe tener el nombre que devuelve este metodo
+        /// Descripcion: Devuelve el nombre de un departamento
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>String el nombre</returns>
         public String getNameDepartamentById(int id)
         {
 
@@ -105,7 +126,13 @@ namespace Dal.Lists
 
         }
 
-        public List<string> getNameDepartaments()
+        /// <summary>
+        /// Precondiciones: Ninguna 
+        /// Postcondiciones: Tiene que devolver todos los nombres de los departamentos de la base de datos
+        /// Descripcion: Un método para obtener todos los nombres de departamentos
+        /// </summary>
+        /// <returns>List<String> Una lista con todos los nombres</returns>
+        public List<String> getNameDepartaments()
         {
 
             SqlCommand command = new SqlCommand();
@@ -145,5 +172,8 @@ namespace Dal.Lists
             return names;
 
         }
+
+        #endregion
+
     }
 }

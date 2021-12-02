@@ -4,11 +4,10 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
+<h1>Eliminar</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>¿Estas seguro de que deseas eliminar a esta persona?</h3>
 <div>
-    <h4>PersonWithDepartamentName</h4>
     <hr />
     <img src="@Model.image" onerror="'https://img1.baidu.com/it/u=4055553068,1027673262&fm=26&fmt=auto'" width="150" height="150" style="border-radius: 100px 100px 100px 100px" alt="Sample Photo" />
     <dl class="row">
@@ -51,7 +50,7 @@
     </dl>
 
     <form asp-action="Delete">
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index">Volver</a>
     </form>
 </div>

@@ -10,6 +10,20 @@ namespace BL.Lists
     public class clsPersonListBL
     {
 
+        #region Constructor
+        public clsPersonListBL()
+        {
+
+        }
+        #endregion
+
+        #region Methods
+        /// <summary>
+        /// Precondiciones: Ninguna
+        /// Postcondiciones: Devuelve lo que devuelve el metodo getPersons() de la capa dal
+        /// Descripcion: En este metodo incluiremos las reglas de negocio
+        /// </summary>
+        /// <returns>List<clsPerson> Las lista de personas que devuelve el metodo getPersons() de la capa dal</returns>
         public List<clsPerson> getPersons()
         {
 
@@ -17,11 +31,18 @@ namespace BL.Lists
 
         }
 
+        /// <summary>
+        /// Precondiciones: Ninguna
+        /// Postcondiciones: Devuelve lo que devuelve el metodo getPerson(int id) de la capa dal
+        /// Descripcion: En este metodo incluiremos las reglas de negocio
+        /// </summary>
+        /// <param name="id">La id de la persona que queremos obtener</param>
+        /// <returns>clsPerson La persona que devuelve el metodo getPerson(int id) de la capa dal</returns>
         public clsPerson getPerson(int id)
         {
             return new clsPersonListDal().getPerson(id);
         }
-
+        #endregion
 
 
 

@@ -4,10 +4,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Personas</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Crear</a>
 </p>
 
 <asp:TextBox AutoPostback="true" ID="futu_search" type="text" spellcheck="false" placeholder="Search" OnTextChanged="futu_search_TextChanged" runat="server"></asp:TextBox>
@@ -41,9 +41,9 @@
                     @Html.DisplayFor(modelItem => item.phoneNumber)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                    @Html.ActionLink("Editar", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = item.id }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.id })
                 </td>
             </tr>
         }
