@@ -1,6 +1,8 @@
 ﻿using Microsoft.OData.Edm;
 using NPOI.SS.Util;
 using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 
 namespace Entidades
@@ -11,10 +13,19 @@ namespace Entidades
         #region Properties 
 
         public int id { get; set; }
-        public string name { get; set; } 
+        [Required]
+        [StringLength(20, ErrorMessage = "Nombre muy largo")]
+        public string name { get; set; }
+        [Required]
+        [StringLength(20, ErrorMessage = "Apellido muy largo")]
         public string lastName { get; set; }
+        [Required]
         public DateTime birthDate { get; set; }
+        [Required]
+        [RegularExpression(@"^^(?:6[0-9]|7[1-9])[0-9]{7}$")]
         public string phoneNumber { get; set; }
+        [Required]
+        [StringLength(20, ErrorMessage = "Direccion muy larga")]
         public string address { get; set; }
         public string image { get; set; }
         public int iddepartamento { get; set; }

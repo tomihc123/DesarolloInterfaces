@@ -26,11 +26,23 @@ namespace Dal.Handler
             sqlCommand.Parameters.Add("@address", System.Data.SqlDbType.VarChar).Value = clsPerson.address;
             sqlCommand.Parameters.Add("@iddepartamento", System.Data.SqlDbType.Int).Value = clsPerson.iddepartamento;
 
+            if(clsPerson.image != null)
+            {
+                sqlCommand.Parameters.Add("@image", System.Data.SqlDbType.VarChar).Value = clsPerson.image;
+
+            } else
+            {
+                sqlCommand.Parameters.Add("@image", System.Data.SqlDbType.VarChar).Value = "https://cdn-icons-png.flaticon.com/512/1920/1920952.png";
+
+            }
+
+
+
 
             try
             {
                 sqlConnection = clsMyConnection.getConnection();
-                sqlCommand.CommandText = "INSERT INTO Persons VALUES (@name, @lastName, @birthDate, @phoneNumber, @address, @iddepartamento)";
+                sqlCommand.CommandText = "INSERT INTO Persons VALUES (@name, @lastName, @birthDate, @phoneNumber, @address, @iddepartamento, @image)";
                 sqlCommand.Connection = sqlConnection;
                 rowsAffected = sqlCommand.ExecuteNonQuery();
 
@@ -65,10 +77,20 @@ namespace Dal.Handler
                 sqlCommand.Parameters.Add("@phoneNumber", System.Data.SqlDbType.VarChar).Value = clsPerson.phoneNumber;
                 sqlCommand.Parameters.Add("@address", System.Data.SqlDbType.VarChar).Value = clsPerson.address;
                 sqlCommand.Parameters.Add("@iddepartamento", System.Data.SqlDbType.Int).Value = clsPerson.iddepartamento;
+                if (clsPerson.image != null)
+                {
+                    sqlCommand.Parameters.Add("@image", System.Data.SqlDbType.VarChar).Value = clsPerson.image;
+
+                }
+                else
+                {
+                    sqlCommand.Parameters.Add("@image", System.Data.SqlDbType.VarChar).Value = "https://cdn-icons-png.flaticon.com/512/1920/1920952.png";
+
+                }
 
 
 
-                sqlCommand.CommandText = "UPDATE Persons SET name = @name, lastName = @lastName, birthDate = @birthDate, phoneNumber = @phoneNumber, address = @address, iddepartamento = @iddepartamento WHERE id = @idPersona";
+                sqlCommand.CommandText = "UPDATE Persons SET name = @name, lastName = @lastName, birthDate = @birthDate, phoneNumber = @phoneNumber, address = @address, iddepartamento = @iddepartamento, image = @image WHERE id = @idPersona";
                 sqlCommand.Connection = sqlConnection;
                 rowsAffected = sqlCommand.ExecuteNonQuery();
 

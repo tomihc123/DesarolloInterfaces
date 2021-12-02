@@ -27,3 +27,4 @@ C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\obj\Debug\netstandard2.
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\obj\Debug\netstandard2.0\BL.csproj.CopyComplete
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\obj\Debug\netstandard2.0\BL.dll
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\obj\Debug\netstandard2.0\BL.pdb
+C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\BL\obj\Debug\netstandard2.0\BL.csproj.CopyComplete

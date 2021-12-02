@@ -77,7 +77,14 @@ namespace ASP.Controllers
 
             try
             {
-                new clsHandlerPersonBL().insertPerson(clsPerson);
+                if(ModelState.IsValid)
+                {
+                    new clsHandlerPersonBL().insertPerson(clsPerson);
+                } else
+                {
+                    return View(new PersonWithListDepartamentName());
+                }
+
 
             } catch (Exception)
             {
@@ -115,7 +122,17 @@ namespace ASP.Controllers
 
             try
             {
-                new clsHandlerPersonBL().updatePerson(clsPerson);
+                if(ModelState.IsValid)
+                {
+
+                    new clsHandlerPersonBL().updatePerson(clsPerson);
+
+
+                } else
+                {
+                    return View(new PersonWithListDepartamentName(new clsPersonListBL().getPerson(clsPerson.id)));
+
+                }
 
             }
             catch (Exception)

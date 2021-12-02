@@ -2,6 +2,7 @@
 using Entidades;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -13,6 +14,7 @@ namespace ASP.Models
         #region Properties 
 
         public int id { get; set; }
+        [DisplayName("Nombre")]
         public string name { get; set; }
         public string lastName { get; set; }
         public DateTime birthDate { get; set; }

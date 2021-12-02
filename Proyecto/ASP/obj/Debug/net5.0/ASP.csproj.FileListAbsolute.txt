@@ -283,3 +283,4 @@ C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\ASP\obj\Debug\net5.0\ref\A
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\ASP\obj\Debug\net5.0\ASP.pdb
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\ASP\obj\Debug\net5.0\ASP.genruntimeconfig.cache
 C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\ASP\obj\Debug\net5.0\Razor\Views\Person\Details.cshtml.g.cs
+C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\ASP\obj\Debug\net5.0\Razor\Views\Person\Details.cshtml.g.cs
