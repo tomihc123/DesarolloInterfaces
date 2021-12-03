@@ -22,5 +22,4 @@ C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandar
 C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.csproj.CoreCompileInputs.cache
 C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.dll
 C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.pdb
-C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.csproj.CopyComplete
 C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Dal\obj\Debug\netstandard2.0\Dal.csproj.CopyComplete

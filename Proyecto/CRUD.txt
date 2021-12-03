@@ -1,0 +1,84 @@
+CADA DAL
+	
+	Connection
+	
+		clsMyConnection Clase para manipular las conexiones a la BDD
+
+		- getConnection() Devuelve una conexcion
+		
+		- closeConnection() Cierra una conexion
+
+
+
+	-Handlers 
+		
+		clsHandlerPersonDal En esta clase se incluiran los metodos para el manejo de las personas
+	
+			- insertPerson(clsPerson clsPerson)
+		
+			- updatePerson(clsPerson clsPerson)
+
+			- deletePerson(int id)
+		
+
+	- List
+		
+		clsPersonListDal En esta clase se incluiran los metodos para obtener las personas
+		
+			- getPerson(int id) Obtiene una persona en concreto
+		
+			- getPersons() Obtiene todas las personas
+		
+		clsDepartamentListDal En esta clase se incluiran los metodos para obtener los departamentos
+		
+
+			- getDepartaments() Obtener todos los departamentos
+			- getNameDepartamentById(int id) Obtiene un departamento
+			- getNameDepartaments() Trae todos los nombres del departamento	
+		
+
+CAPA BL
+
+	
+	-Handlers 
+		
+		clsHandlerPersonBL En esta clase se incluiran los metodos que llaman a los metodos de la dal de handler
+	
+		- insertPerson(clsPerson clsPerson)
+		
+		- updatePerson(clsPerson clsPerson)
+
+		- deletePerson(int id)
+
+	- List
+		
+		clsPersonListDal En esta clase se incluiran los metodos que llaman a los metodos de la dal para de list
+		
+		- getPerson(int id) Obtiene una persona en concreto
+		
+		- getPersons() Obtiene todas las personas
+		
+
+		clsDepartamentListBl Los metodos llaman a los metodos de la Dal
+
+		- getDepartaments() 
+	
+		- getNameDepartamentById(int id)
+		
+		- getNameDepartaments()
+		
+
+CAPA ENTIDADES
+
+	clsPersona 
+	clsEntidades
+
+
+ASP
+
+	- Controladores Para controlar las vistas
+
+	- Models Para ofrecer modelos a la vista
+
+	-Views las vistas
+

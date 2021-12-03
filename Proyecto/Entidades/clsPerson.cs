@@ -28,7 +28,7 @@ namespace Entidades
         [DisplayName("Móvil")]
         public string phoneNumber { get; set; }
         [Required]
-        [StringLength(20, ErrorMessage = "Direccion muy larga")]
+        [StringLength(40, ErrorMessage = "Direccion muy larga")]
         [DisplayName("Dirección")]
         public string address { get; set; }
         [DisplayName("Url Imagen")]
@@ -55,6 +55,7 @@ namespace Entidades
             this.iddepartamento = iddepartamento;
         }
 
+        
         public clsPerson(clsPerson clsPerson)
         {
             this.name = clsPerson.name;

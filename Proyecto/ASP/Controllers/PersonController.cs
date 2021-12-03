@@ -75,6 +75,9 @@ namespace ASP.Controllers
         public ActionResult Create(clsPerson clsPerson)
         {
 
+
+            ActionResult actionResult = RedirectToAction(nameof(Index));
+
             try
             {
                 if(ModelState.IsValid)
@@ -82,16 +85,16 @@ namespace ASP.Controllers
                     new clsHandlerPersonBL().insertPerson(clsPerson);
                 } else
                 {
-                    return View(new PersonWithListDepartamentName());
+                    actionResult =  View(new PersonWithListDepartamentName());
                 }
 
 
             } catch (Exception)
             {
-                return View("Error", new ErrorViewModel());
+                actionResult =  View("Error", new ErrorViewModel());
             }
 
-            return RedirectToAction(nameof(Index));
+            return actionResult;
 
         }
 
@@ -119,6 +122,8 @@ namespace ASP.Controllers
         public ActionResult Edit(clsPerson clsPerson)
         {
 
+            ActionResult actionResult = RedirectToAction(nameof(Index));
+
 
             try
             {
@@ -130,18 +135,18 @@ namespace ASP.Controllers
 
                 } else
                 {
-                    return View(new PersonWithListDepartamentName(new clsPersonListBL().getPerson(clsPerson.id)));
+                    actionResult =  View(new PersonWithListDepartamentName(new clsPersonListBL().getPerson(clsPerson.id)));
 
                 }
 
             }
             catch (Exception)
             {
-                return View("Error", new ErrorViewModel());
+                actionResult =  View("Error", new ErrorViewModel());
 
             }
 
-            return RedirectToAction(nameof(Index));
+            return actionResult;
 
         }
 
