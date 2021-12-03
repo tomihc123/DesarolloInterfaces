@@ -1,0 +1,10 @@
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Entidades\bin\Release\netstandard2.0\Entidades.deps.json
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Entidades\bin\Release\netstandard2.0\Entidades.dll
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Entidades\bin\Release\netstandard2.0\Entidades.pdb
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Entidades\obj\Release\netstandard2.0\Entidades.csproj.AssemblyReference.cache
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Entidades\obj\Release\netstandard2.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Entidades\obj\Release\netstandard2.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Entidades\obj\Release\netstandard2.0\Entidades.AssemblyInfo.cs
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Entidades\obj\Release\netstandard2.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Entidades\obj\Release\netstandard2.0\Entidades.dll
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Entidades\obj\Release\netstandard2.0\Entidades.pdb

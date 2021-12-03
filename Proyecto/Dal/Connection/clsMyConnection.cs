@@ -37,8 +37,8 @@ namespace Dal.Connection
 
             this.server = "tomihc123.database.windows.net";
             this.dataBase = "BaseCiclo";
-            this.user = "master";
-            this.pass = "sierra24$";
+            this.user = "Prueba";
+            this.pass = "123qweasd!";
 
         }
         //Con parámetros por si quisiera cambiar las conexiones

@@ -1,0 +1,15 @@
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\bin\Release\netstandard2.0\BL.deps.json
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\bin\Release\netstandard2.0\BL.dll
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\bin\Release\netstandard2.0\BL.pdb
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\bin\Release\netstandard2.0\Dal.dll
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\bin\Release\netstandard2.0\Entidades.dll
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\bin\Release\netstandard2.0\Dal.pdb
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\bin\Release\netstandard2.0\Entidades.pdb
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\obj\Release\netstandard2.0\BL.csproj.AssemblyReference.cache
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\obj\Release\netstandard2.0\BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\obj\Release\netstandard2.0\BL.AssemblyInfoInputs.cache
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\obj\Release\netstandard2.0\BL.AssemblyInfo.cs
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\obj\Release\netstandard2.0\BL.csproj.CoreCompileInputs.cache
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\obj\Release\netstandard2.0\BL.csproj.CopyComplete
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\obj\Release\netstandard2.0\BL.dll
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\BL\obj\Release\netstandard2.0\BL.pdb
