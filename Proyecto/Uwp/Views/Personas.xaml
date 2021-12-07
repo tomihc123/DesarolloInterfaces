@@ -1,0 +1,99 @@
+﻿<Page
+    x:Class="Uwp.Views.Personas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Uwp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodel="using:Uwp.ViewModels"
+    xmlns:converters="using:Uwp.Parsers"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <Page.DataContext>
+        <viewmodel:PersonaViewModel/>
+    </Page.DataContext>
+
+    <Page.Resources>
+        <converters:ParseData x:Key="parseConverter"/>
+    </Page.Resources>
+
+    <Grid x:Name="GridPrincipal">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.04*"/>
+            <ColumnDefinition Width="0.05*"/>
+        </Grid.ColumnDefinitions>
+
+        <RelativePanel Grid.Row="0" Grid.Column="0">
+
+        <StackPanel Name="Cabecera" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Orientation="Horizontal" MaxWidth="500">
+
+        <TextBox MinWidth="300" x:Name="busqueda" Text="{Binding Path=NombreBusqueda, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+
+        <AppBarButton  Name="btnSearch" Icon="Find"  Command="{Binding Path=SearchComand}"/>
+
+        <AppBarButton   Name="btnDelete" Icon="Delete" Command="{Binding Path=DeleteComand}"/>
+
+        <AppBarButton   Name="btnAdd" Icon="Add" Command="{Binding Path=AddComand}"/>
+
+
+        </StackPanel>
+
+
+    <ListView x:Name="personList" RelativePanel.Below="Cabecera" Margin="0,10,0,0" ItemsSource="{Binding Path=PersonListFiltrada, Mode=OneWay}"  SelectedItem="{Binding Path=SelectedPerson, Mode=TwoWay}">
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding name}"></TextBlock>
+                    <TextBlock Margin="5,0,0,0" Text="{Binding lastName}"></TextBlock>
+                </StackPanel>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+    </ListView>
+        
+    </RelativePanel>
+
+        <StackPanel VerticalAlignment="Top" Orientation="Vertical" x:Name="Formulario" Grid.Column="1" Grid.Row="0">
+
+            <TextBlock x:Name="tbName"  HorizontalAlignment="Left" Text="Name" Margin="5"/>
+            <TextBox Name="tbxName"  Text="{Binding Path=SelectedPerson.name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+
+            <TextBlock x:Name="tbLastName"  HorizontalAlignment="Left" Text="LastName"   Margin="5"/>
+            <TextBox Name="tbxLastname"  Text="{Binding Path=SelectedPerson.lastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  Margin="5"/>
+
+            <TextBlock x:Name="tbBirthDate"  HorizontalAlignment="Left" Text="Birth Date" Margin="5"/>
+            <TextBox Name="tbxBirthDate"  Text="{Binding Path=SelectedPerson.birthDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource parseConverter}}" Margin="5"/>
+
+            <TextBlock x:Name="tbPhoneNumber"  HorizontalAlignment="Left" Text="Phone number"  Margin="5"/>
+            <TextBox Name="tbxPhoneNumber"  Text="{Binding Path=SelectedPerson.phoneNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+
+            <TextBlock x:Name="tbAddress"  HorizontalAlignment="Left" Text="Address"   Margin="5"/>
+            <TextBox Name="tbxAddress"  Text="{Binding Path=SelectedPerson.address, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"   Margin="5"/>
+
+            <ComboBox 
+                Name="departamentos"
+                DisplayMemberPath="name"
+                SelectedValue="{Binding Path=SelectedPerson.iddepartamento, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                SelectedValuePath="id"
+                Margin="5" 
+                Grid.Column="1"
+                Grid.Row="5" 
+                SelectedIndex="{Binding Path=SelectedPerson.iddepartamento}"
+                ItemsSource="{Binding Path=ListDepartaments}"     
+            />
+
+            <AppBarButton Icon="Save" Command="{Binding Path=SaveComand}"/>
+            
+        </StackPanel> 
+             
+    </Grid>
+
+</Page>
+

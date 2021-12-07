@@ -40,7 +40,7 @@ namespace Entidades
         //Constructor por defecto
         public clsPerson()
         {
-
+            birthDate = DateTime.Now;
         }
 
         //Constructor con parametros

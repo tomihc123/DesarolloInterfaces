@@ -543,6 +543,21 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Dal": "1.0.0",
+          "Entidades": "1.0.0",
+          "System.Data.SqlClient": "4.8.3"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
+        }
+      },
       "Dal/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1271,6 +1286,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Dal": "1.0.0",
+          "Entidades": "1.0.0",
+          "System.Data.SqlClient": "4.8.3"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
         }
       },
       "Dal/1.0.0": {
@@ -2004,6 +2034,21 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Dal": "1.0.0",
+          "Entidades": "1.0.0",
+          "System.Data.SqlClient": "4.8.3"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
+        }
+      },
       "Dal/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2735,6 +2780,21 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Dal": "1.0.0",
+          "Entidades": "1.0.0",
+          "System.Data.SqlClient": "4.8.3"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
+        }
+      },
       "Dal/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3463,6 +3523,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Dal": "1.0.0",
+          "Entidades": "1.0.0",
+          "System.Data.SqlClient": "4.8.3"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
         }
       },
       "Dal/1.0.0": {
@@ -4196,6 +4271,21 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Dal": "1.0.0",
+          "Entidades": "1.0.0",
+          "System.Data.SqlClient": "4.8.3"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
+        }
+      },
       "Dal/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -4924,6 +5014,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Dal": "1.0.0",
+          "Entidades": "1.0.0",
+          "System.Data.SqlClient": "4.8.3"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
         }
       },
       "Dal/1.0.0": {
@@ -5655,6 +5760,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Dal": "1.0.0",
+          "Entidades": "1.0.0",
+          "System.Data.SqlClient": "4.8.3"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
         }
       },
       "Dal/1.0.0": {
@@ -10736,6 +10856,11 @@
         "version.txt"
       ]
     },
+    "BL/1.0.0": {
+      "type": "project",
+      "path": "../BL/BL.csproj",
+      "msbuildProject": "../BL/BL.csproj"
+    },
     "Dal/1.0.0": {
       "type": "project",
       "path": "../Dal/Dal.csproj",
@@ -10749,13 +10874,13 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
-      "Dal >= 1.0.0",
+      "BL >= 1.0.0",
       "Entidades >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thuecas\\.nuget\\packages\\": {},
+    "C:\\Users\\TxHxTxHxT\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
@@ -10763,11 +10888,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\Uwp\\Uwp.csproj",
+      "projectUniqueName": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\Uwp\\Uwp.csproj",
       "projectName": "Uwp",
-      "projectPath": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\Uwp\\Uwp.csproj",
-      "packagesPath": "C:\\Users\\thuecas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\Uwp\\obj\\",
+      "projectPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\Uwp\\Uwp.csproj",
+      "packagesPath": "C:\\Users\\TxHxTxHxT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\Uwp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10776,7 +10901,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\thuecas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TxHxTxHxT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -10791,11 +10916,11 @@
       "frameworks": {
         "uap10.0.17763": {
           "projectReferences": {
-            "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\Dal\\Dal.csproj": {
-              "projectPath": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\Dal\\Dal.csproj"
+            "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\BL\\BL.csproj"
             },
-            "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\Entidades\\Entidades.csproj"
+            "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\Entidades\\Entidades.csproj"
             }
           }
         }

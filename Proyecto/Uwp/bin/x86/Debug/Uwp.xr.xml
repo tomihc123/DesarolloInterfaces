@@ -1,13 +1,128 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="name" />
+    <RootPropertyPathName Name="id" />
+    <RootPropertyPathName Name="SaveComand" />
+    <RootPropertyPathName Name="SelectedPerson" />
+    <RootPropertyPathName Name="iddepartamento" />
+    <RootPropertyPathName Name="ListDepartaments" />
+    <RootPropertyPathName Name="address" />
+    <RootPropertyPathName Name="phoneNumber" />
+    <RootPropertyPathName Name="birthDate" />
+    <RootPropertyPathName Name="lastName" />
+    <RootPropertyPathName Name="PersonListFiltrada" />
+    <RootPropertyPathName Name="AddComand" />
+    <RootPropertyPathName Name="DeleteComand" />
+    <RootPropertyPathName Name="SearchComand" />
+    <RootPropertyPathName Name="NombreBusqueda" />
+  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Grid" />
-    <RootType FullName="Uwp.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Uwp.Views.Departamentos" />
+    <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
+      <RootProperty Name="Name" />
+      <RootProperty Name="IsBackButtonVisible" />
+      <RootProperty Name="PaneDisplayMode" />
+      <RootProperty Name="IsSettingsVisible" />
+      <RootProperty Name="MenuItems" />
+      <RootProperty Name="Content" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.NavigationViewItem">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Icon" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Frame">
+      <RootProperty Name="Name" />
+    </RootType>
+    <RootType FullName="Uwp.Views.MainPage" />
+    <RootType FullName="Uwp.ViewModels.PersonaViewModel" />
+    <RootType FullName="Uwp.Parsers.ParseData" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetAlignTopWithPanel" />
+      <RootMethod Name="SetAlignTopWithPanel" />
+      <RootMethod Name="GetAlignLeftWithPanel" />
+      <RootMethod Name="SetAlignLeftWithPanel" />
+      <RootMethod Name="GetBelow" />
+      <RootMethod Name="SetBelow" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="MaxWidth" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MinWidth" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="DisplayMemberPath" />
+      <RootProperty Name="SelectedValue" />
+      <RootProperty Name="SelectedValuePath" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="SelectedIndex" />
+      <RootProperty Name="ItemsSource" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Icon" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="Name" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="Converter" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Uwp.Views.Personas" />
   </Roots.RootTypes>
 </Roots>

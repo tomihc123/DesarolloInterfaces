@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>107-26</Machine>
-    <WindowsUser>thuecas</WindowsUser>
+    <Machine>DESKTOP-A0K1B3H</Machine>
+    <WindowsUser>TxHxTxHxT</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,124 +10,142 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>0162047a-c9ca-41e0-810c-71471670934f</PackageIdentityName>
     <PackageIdentityPublisher>CN=thuecas</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Uwp.exe">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Uwp.exe">
       <PackagePath>entrypoint\Uwp.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\microsoft.bcl.asyncinterfaces\1.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\microsoft.bcl.asyncinterfaces\1.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\microsoft.odata.edm\7.9.4\lib\netstandard2.0\Microsoft.OData.Edm.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\microsoft.odata.edm\7.9.4\lib\netstandard2.0\Microsoft.OData.Edm.dll">
       <PackagePath>Microsoft.OData.Edm.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\npoi\2.5.5\lib\netstandard2.0\NPOI.OOXML.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\npoi\2.5.5\lib\netstandard2.0\NPOI.OOXML.dll">
       <PackagePath>NPOI.OOXML.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\npoi\2.5.5\lib\netstandard2.0\NPOI.OpenXml4Net.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\npoi\2.5.5\lib\netstandard2.0\NPOI.OpenXml4Net.dll">
       <PackagePath>NPOI.OpenXml4Net.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\npoi\2.5.5\lib\netstandard2.0\NPOI.OpenXmlFormats.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\npoi\2.5.5\lib\netstandard2.0\NPOI.OpenXmlFormats.dll">
       <PackagePath>NPOI.OpenXmlFormats.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\npoi\2.5.5\lib\netstandard2.0\NPOI.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\npoi\2.5.5\lib\netstandard2.0\NPOI.dll">
       <PackagePath>NPOI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\portable.bouncycastle\1.8.9\lib\netstandard2.0\BouncyCastle.Crypto.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\portable.bouncycastle\1.8.9\lib\netstandard2.0\BouncyCastle.Crypto.dll">
       <PackagePath>BouncyCastle.Crypto.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\sharpziplib\1.3.2\lib\netstandard2.0\ICSharpCode.SharpZipLib.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\sharpziplib\1.3.2\lib\netstandard2.0\ICSharpCode.SharpZipLib.dll">
       <PackagePath>ICSharpCode.SharpZipLib.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\system.configuration.configurationmanager\4.5.0\lib\netstandard2.0\System.Configuration.ConfigurationManager.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\system.configuration.configurationmanager\4.5.0\lib\netstandard2.0\System.Configuration.ConfigurationManager.dll">
       <PackagePath>System.Configuration.ConfigurationManager.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\system.drawing.common\4.5.0\lib\netstandard2.0\System.Drawing.Common.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\system.data.sqlclient\4.8.3\runtimes\win\lib\uap10.0.16299\System.Data.SqlClient.dll">
+      <PackagePath>System.Data.SqlClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\system.diagnostics.diagnosticsource\4.7.0\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll">
+      <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\system.drawing.common\4.5.0\lib\netstandard2.0\System.Drawing.Common.dll">
       <PackagePath>System.Drawing.Common.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\system.runtime.compilerservices.unsafe\4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\system.runtime.compilerservices.unsafe\4.7.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\system.security.cryptography.protecteddata\4.5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\system.security.cryptography.protecteddata\4.5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll">
       <PackagePath>System.Security.Cryptography.ProtectedData.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\system.text.encodings.web\4.7.2\lib\netstandard2.0\System.Text.Encodings.Web.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\system.text.encoding.codepages\4.7.0\runtimes\win\lib\netstandard2.0\System.Text.Encoding.CodePages.dll">
+      <PackagePath>System.Text.Encoding.CodePages.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\system.text.encodings.web\4.7.2\lib\netstandard2.0\System.Text.Encodings.Web.dll">
       <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\.nuget\packages\system.text.json\4.6.0\lib\netstandard2.0\System.Text.Json.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\system.text.json\4.6.0\lib\netstandard2.0\System.Text.Json.dll">
       <PackagePath>System.Text.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Dal\bin\Debug\netstandard2.0\Dal.dll">
-      <PackagePath>Dal.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\BL\bin\Debug\netstandard2.0\BL.dll">
+      <PackagePath>BL.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Entidades\bin\Debug\netstandard2.0\Entidades.dll">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Entidades\bin\Debug\netstandard2.0\Entidades.dll">
       <PackagePath>Entidades.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\BL\bin\Debug\netstandard2.0\Dal.dll">
+      <PackagePath>Dal.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Uwp.xr.xml">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Uwp.xr.xml">
       <PackagePath>Uwp.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Views\Departamentos.xbf">
+      <PackagePath>Views\Departamentos.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Views\MainPage.xbf">
+      <PackagePath>Views\MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Views\Personas.xbf">
+      <PackagePath>Views\Personas.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Core\Uwp.exe">
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Core\Uwp.exe">
       <PackagePath>Uwp.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

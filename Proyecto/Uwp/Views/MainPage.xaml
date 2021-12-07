@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Uwp.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Uwp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <NavigationView IsBackButtonVisible="Collapsed" PaneDisplayMode="Top" IsSettingsVisible="False" Name="NavigationPrinciapl"  SelectionChanged="NavigationPrinciapl_SelectionChanged"  >
+
+
+        <NavigationView.MenuItems >
+            <NavigationViewItem Name="NavPersonas" Tag="Personas" Content="Personas" Icon="People" />
+            <NavigationViewItem Name="NavDepartamentos"  Tag="Departamentos" Content="Departamentos" Icon="Folder"/>
+        </NavigationView.MenuItems>
+
+
+        <Frame Name="ContentFrame"  >
+        </Frame>
+
+    </NavigationView>
+
+</Page>
+

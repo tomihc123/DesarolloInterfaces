@@ -119,10 +119,21 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Parsers\ParseData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\DepartamentoViewModel.cs" />
+    <Compile Include="ViewModels\PersonaViewModel.cs" />
+    <Compile Include="ViewModels\Utiles\clsVMBase.cs" />
+    <Compile Include="ViewModels\Utiles\DelegateCommand.cs" />
+    <Compile Include="Views\Departamentos.xaml.cs">
+      <DependentUpon>Departamentos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Personas.xaml.cs">
+      <DependentUpon>Personas.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -144,10 +155,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
@@ -155,15 +162,30 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dal\Dal.csproj">
-      <Project>{74ba0ee4-acd4-4e14-ab61-3a2a0a60f6c1}</Project>
-      <Name>Dal</Name>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{f3128869-39e1-4285-94e2-527cfdf671e7}</Project>
+      <Name>BL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{de4055a6-87f9-4c09-a654-82c8cada5334}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Page Include="Views\Departamentos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Personas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
