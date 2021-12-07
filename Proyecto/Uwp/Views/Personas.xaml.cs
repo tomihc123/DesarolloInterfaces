@@ -34,7 +34,7 @@ namespace Uwp.Views
 
         private void tbxName_TextChanged(object sender, TextChangedEventArgs e)
         {
-           // ((PersonaViewModel)(this.DataContext)).SaveComand.RaiseCanExecuteChanged();
+
         }
     }
 }

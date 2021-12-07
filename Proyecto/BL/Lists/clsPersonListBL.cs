@@ -46,5 +46,13 @@ namespace BL.Lists
 
 
 
+        public List<clsPerson> getPersonsByDepartament(int id)
+        {
+
+            return new clsPersonListDal().getPersonsByDepartament(id);
+
+        }
+
+
     }
 }

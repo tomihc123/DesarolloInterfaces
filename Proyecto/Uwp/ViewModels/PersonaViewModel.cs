@@ -18,6 +18,7 @@ namespace Uwp.ViewModels
 
         public clsPerson selectedPerson;
 
+
         private ObservableCollection<clsPerson> personList;
         private ObservableCollection<clsPerson> personListFiltrada = new ObservableCollection<clsPerson> { };
         private ObservableCollection<clsDepartament> listDeparments = new ObservableCollection<clsDepartament>{ };
@@ -25,14 +26,9 @@ namespace Uwp.ViewModels
         private DelegateCommand deleteComand;
         private DelegateCommand searchComand;
         private DelegateCommand addComand;
-        private DelegateCommand searchCommand;
         private DelegateCommand saveCommand;
 
-
-
-
-
-
+        private String mensajeError;
         private String nombreBusqueda;
 
         public PersonaViewModel()
@@ -41,53 +37,71 @@ namespace Uwp.ViewModels
             this.listDeparments = new ObservableCollection<clsDepartament>(new clsDepartamentListBL().getDepartaments());
             this.deleteComand = new DelegateCommand(deleteComand_execute, deleteComand_canExecute);
             this.searchComand = new DelegateCommand(searchComand_execute, searchComand_canExecute);
-            this.saveCommand = new DelegateCommand(saveComand_execute, saveComand_canExecute);
+            this.saveCommand = new DelegateCommand(saveComand_execute);
             this.addComand = new DelegateCommand(addComand_execute);
             this.personListFiltrada = new ObservableCollection<clsPerson>(personList);
-            SelectedPerson = new clsPerson();
-
+            selectedPerson = new clsPerson();
         }
-
-
 
         private void addComand_execute()
         {
-            selectedPerson = new clsPerson();
-            personListFiltrada = new ObservableCollection<clsPerson>(new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons()));
-            selectedPerson = new clsPerson();
+            this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
+            personListFiltrada = new ObservableCollection<clsPerson>(personList);
             NotifyPropertyChanged("PersonListFiltrada");
+            selectedPerson = new clsPerson();
+            NotifyPropertyChanged("SelectedPerson");
+            mensajeError = "";
+            NotifyPropertyChanged("MensajeError");
         }
 
-        private bool saveComand_canExecute()
+
+
+
+        public String MensajeError
         {
-
-            bool sePuede = false;
-
-            if(selectedPerson != null)
-            {
-                if(selectedPerson.name != null)
-                {
-                    sePuede = true;
-                }
-                            
+            get {
+                return mensajeError;
             }
 
-            return sePuede;    
+            set
+            {
+                mensajeError = value;
+                NotifyPropertyChanged("MensajeError");
+            }
+
         }
 
         private void saveComand_execute()
         {
-            if(selectedPerson.id == 0)
+
+            if (!String.IsNullOrEmpty(selectedPerson.name) && !String.IsNullOrEmpty(selectedPerson.lastName) && selectedPerson.birthDate != null && !String.IsNullOrEmpty(selectedPerson.phoneNumber) && !String.IsNullOrEmpty(selectedPerson.address))
             {
-                new clsHandlerPersonBL().insertPerson(selectedPerson);
+
+                if (selectedPerson.id == 0)
+                {
+                    new clsHandlerPersonBL().insertPerson(selectedPerson);
+
+                }
+                else
+                {
+                    new clsHandlerPersonBL().updatePerson(selectedPerson);
+                }
+
+                this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
+                personListFiltrada = new ObservableCollection<clsPerson>(personList);
+                NotifyPropertyChanged("PersonListFiltrada");
+                mensajeError = "";
+                NotifyPropertyChanged("MensajeError");
+                selectedPerson = new clsPerson();
+                NotifyPropertyChanged("SelectedPerson");
 
             } else
             {
-                new clsHandlerPersonBL().updatePerson(selectedPerson);
+                mensajeError = "Los campos no pueden estar vacios";
+                NotifyPropertyChanged("MensajeError");
             }
 
-            personListFiltrada = new ObservableCollection<clsPerson>(new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons()));
-            NotifyPropertyChanged("PersonListFiltrada");
+
 
         }
 
@@ -131,7 +145,6 @@ namespace Uwp.ViewModels
             {
                 return nombreBusqueda;
             }
-
 
             set
             {
@@ -180,6 +193,9 @@ namespace Uwp.ViewModels
                 NotifyPropertyChanged("SelectedPerson");
                 deleteComand.RaiseCanExecuteChanged();
                 saveCommand.RaiseCanExecuteChanged();
+                mensajeError = "";
+                NotifyPropertyChanged("MensajeError");
+
             }
         }
 
@@ -200,16 +216,22 @@ namespace Uwp.ViewModels
             if (result == ContentDialogResult.Primary)
             {
                 new clsHandlerPersonBL().deletePerson(SelectedPerson.id);
-                personListFiltrada = new ObservableCollection<clsPerson>(new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons()));
+                this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
+                personListFiltrada = new ObservableCollection<clsPerson>(personList);
                 NotifyPropertyChanged("PersonListFiltrada");
             }
 
-
+            selectedPerson = new clsPerson();
+            NotifyPropertyChanged("SelectedPerson");
+            mensajeError = "";
+            NotifyPropertyChanged("MensajeError");
         }
 
         private bool deleteComand_canExecute()
         {
             bool personSelected = true;
+
+
 
             if (selectedPerson == null)
             {
@@ -259,13 +281,10 @@ namespace Uwp.ViewModels
                 }
             }
 
-        }
+            selectedPerson = new clsPerson();
+            NotifyPropertyChanged("SelectedPerson");
 
-        public void form_Changed(object sender, TextChangedEventArgs e)
-        {
-            saveCommand.RaiseCanExecuteChanged();
         }
-
 
     }
 }

@@ -187,6 +187,86 @@ namespace Dal.Lists
             return personList;
         }
 
+
+        public List<clsPerson> getPersonsByDepartament(int id)
+        {
+
+            List<clsPerson> personList = new List<clsPerson>();
+            SqlCommand command = new SqlCommand();
+            SqlDataReader reader;
+            clsPerson person;
+            clsMyConnection clsMyConnection = new clsMyConnection();
+            SqlConnection connection = null;
+
+
+
+            try
+            {
+                connection = clsMyConnection.getConnection();
+                command.Parameters.Add("@ID", System.Data.SqlDbType.VarChar).Value = id;
+                command.CommandText = "Select * FROM Persons WHERE iddepartamento = @ID";
+                command.Connection = connection;
+                reader = command.ExecuteReader();
+
+
+                //Si hay filas
+                if (reader.HasRows)
+                {
+                    //Mientras se pueda leer
+                    while (reader.Read())
+                    {
+
+                        person = new clsPerson();
+
+                        person.id = (int)reader["id"];
+
+                        person.name = (string)reader["name"];
+
+                        if (reader["lastName"] != DBNull.Value)
+                        {
+                            person.lastName = (string)reader["lastName"];
+                        }
+
+                        if (reader["birthDate"] != System.DBNull.Value)
+                        {
+                            person.birthDate = (DateTime)reader["birthDate"];
+                        }
+
+                        if (reader["phoneNumber"] != DBNull.Value)
+                        {
+                            person.phoneNumber = (string)reader["phoneNumber"];
+                        }
+
+                        if (reader["address"] != DBNull.Value)
+                        {
+                            person.address = (string)reader["address"];
+                        }
+
+                        if (reader["image"] != DBNull.Value)
+                        {
+                            person.image = (string)reader["image"];
+                        }
+
+                        person.iddepartamento = (int)reader["iddepartamento"];
+
+                        personList.Add(person);
+                    }
+                }
+
+
+                clsMyConnection.closeConnection(ref connection);
+
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+
+
+            return personList;
+        }
+
+
         #endregion
     }
 }
