@@ -21,11 +21,11 @@ namespace Dal.Handler
         #region Methods
 
         /// <summary>
-        /// Precondiciones: El atributo image del parametro clsPerson en caso de no ser nulo, debe ser una url válida de una imagen
-        /// Postcondiciones: Si se puede realizar correctamente la inserción, la persona se insertara en la base de datos
-        /// Descripcion: Este metodo usa sentencias de sql para insertar la persona
+        /// Precondiciones: Ninguna
+        /// Postcondiciones: Si se puede realizar correctamente la inserción, el departamento se insertara en la base de datos
+        /// Descripcion: Este metodo usa sentencias de sql para insertar el departamento
         /// </summary>
-        /// <param name="clsPerson"> La persona que queremos insertar en la base de datos</param>
+        /// <param name="clsDepartament"> El departamento que queremos insertar en la base de datos</param>
         /// <returns>int Las filas afectadas</returns>
         public int insertDepartament(clsDepartament clsDepartament)
         {
@@ -61,11 +61,11 @@ namespace Dal.Handler
 
 
         /// <summary>
-        /// Precondiciones: El atributo image del parametro clsPerson en caso de no ser nulo, debe ser una url válida de una imagen
-        /// Postcondiciones: Si se puede realizar correctamente la actualización, la persona se actualizara en la base de datos
-        /// Descripcion: Este metodo usa sentencias de sql para actualizar la persona
+        /// Precondiciones: Ninguna
+        /// Postcondiciones: Si se puede realizar correctamente la actualización, el departamento se actualizara en la base de datos
+        /// Descripcion: Este metodo usa sentencias de sql para actualizar el departamento
         /// </summary>
-        /// <param name="clsPerson"> La persona que queremos actualizar en la base de datos</param>
+        /// <param name="clsDepartament"> El departamento que queremos actualizar en la base de datos</param>
         /// <returns>int Las filas afectadas</returns>
         public int updateDepartament(clsDepartament clsDepartament)
         {
@@ -106,10 +106,10 @@ namespace Dal.Handler
 
         /// <summary>
         /// Precondiciones: La id debe existir en la base de datos
-        /// Postcondiciones: Si se puede realizar correctamente la eliminación, la persona cuya id es la pasado por parámetro se eliminara en la base de datos
+        /// Postcondiciones: Si se puede realizar correctamente la eliminación, el departamento cuya id es la pasado por parámetro se eliminara en la base de datos
         /// Descripcion: Este metodo usa sentencias de sql para eliminar la persona
         /// </summary>
-        /// <param name="id">La id de la persona que queremos eliminar</param>
+        /// <param name="id">La id de el departamento que queremos eliminar</param>
         /// <returns>int Las filas afectadas</returns>
         /// 
         public int deleteDepartament(int id)

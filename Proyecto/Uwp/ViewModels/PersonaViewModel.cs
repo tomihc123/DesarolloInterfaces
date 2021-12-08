@@ -16,21 +16,26 @@ namespace Uwp.ViewModels
     {
 
 
+        //Persona seleccionada
         public clsPerson selectedPerson;
 
-
+        //La lista con las personas
         private ObservableCollection<clsPerson> personList;
+        //La lista filtrada y que ofrecemos a la vista
         private ObservableCollection<clsPerson> personListFiltrada = new ObservableCollection<clsPerson> { };
         private ObservableCollection<clsDepartament> listDeparments = new ObservableCollection<clsDepartament>{ };
 
+        //Comandos
         private DelegateCommand deleteComand;
         private DelegateCommand searchComand;
         private DelegateCommand addComand;
         private DelegateCommand saveCommand;
 
+        //Mensajes de errores y texto para el nombre de busqueda
         private String mensajeError;
         private String nombreBusqueda;
 
+        #region Constructor
         public PersonaViewModel()
         {
             this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
@@ -43,23 +48,16 @@ namespace Uwp.ViewModels
             selectedPerson = new clsPerson();
         }
 
-        private void addComand_execute()
-        {
-            this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
-            personListFiltrada = new ObservableCollection<clsPerson>(personList);
-            NotifyPropertyChanged("PersonListFiltrada");
-            selectedPerson = new clsPerson();
-            NotifyPropertyChanged("SelectedPerson");
-            mensajeError = "";
-            NotifyPropertyChanged("MensajeError");
-        }
+        #endregion
 
 
+        #region Properties
 
 
         public String MensajeError
         {
-            get {
+            get
+            {
                 return mensajeError;
             }
 
@@ -71,38 +69,61 @@ namespace Uwp.ViewModels
 
         }
 
-        private void saveComand_execute()
+        public String NombreBusqueda
         {
-
-            if (!String.IsNullOrEmpty(selectedPerson.name) && !String.IsNullOrEmpty(selectedPerson.lastName) && selectedPerson.birthDate != null && !String.IsNullOrEmpty(selectedPerson.phoneNumber) && !String.IsNullOrEmpty(selectedPerson.address))
+            get
             {
-
-                if (selectedPerson.id == 0)
-                {
-                    new clsHandlerPersonBL().insertPerson(selectedPerson);
-
-                }
-                else
-                {
-                    new clsHandlerPersonBL().updatePerson(selectedPerson);
-                }
-
-                this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
-                personListFiltrada = new ObservableCollection<clsPerson>(personList);
-                NotifyPropertyChanged("PersonListFiltrada");
-                mensajeError = "";
-                NotifyPropertyChanged("MensajeError");
-                selectedPerson = new clsPerson();
-                NotifyPropertyChanged("SelectedPerson");
-
-            } else
-            {
-                mensajeError = "Los campos no pueden estar vacios";
-                NotifyPropertyChanged("MensajeError");
+                return nombreBusqueda;
             }
 
+            set
+            {
+                nombreBusqueda = value;
+                searchComand.RaiseCanExecuteChanged();
+                searchComand_execute();
+            }
+        }
+
+        public ObservableCollection<clsPerson> PersonListFiltrada
+        {
+            get
+            {
+                return personListFiltrada;
+            }
+            set
+            {
+                personListFiltrada = value;
+
+            }
+
+        }
 
 
+        public ObservableCollection<clsDepartament> ListDepartaments
+        {
+            get
+            {
+                return listDeparments;
+            }
+        }
+
+        public clsPerson SelectedPerson
+        {
+            get
+            {
+                return selectedPerson;
+            }
+
+            set
+            {
+                selectedPerson = value;
+                NotifyPropertyChanged("SelectedPerson");
+                deleteComand.RaiseCanExecuteChanged();
+                saveCommand.RaiseCanExecuteChanged();
+                mensajeError = "";
+                NotifyPropertyChanged("MensajeError");
+
+            }
         }
 
         public DelegateCommand DeleteComand
@@ -132,74 +153,82 @@ namespace Uwp.ViewModels
 
         public DelegateCommand SaveComand
         {
-           get   
+            get
             {
                 return saveCommand;
             }
         }
 
+        #endregion
 
-        public String NombreBusqueda
+
+
+
+
+
+        #region Comand
+
+        /// <summary>
+        /// Comando para añadir una persona, genera una persona selecciona por defecto para poner los campos vacios
+        /// </summary>
+        private void addComand_execute()
         {
-            get
-            {
-                return nombreBusqueda;
-            }
-
-            set
-            {
-                nombreBusqueda = value;
-                searchComand.RaiseCanExecuteChanged();
-                searchComand_execute();
-            }
-        }
-
-        public ObservableCollection<clsPerson> PersonListFiltrada
-        {
-            get
-            {
-                return personListFiltrada;
-            }
-
-            set
-            {
-                personListFiltrada = value;
-
-            }
-
-        }
-
-
-        public ObservableCollection<clsDepartament> ListDepartaments
-        {
-            get
-            {
-                return listDeparments;
-            }
+            //En caso de que haya alguna persona seleccionada en la lista la quita
+            this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
+            personListFiltrada = new ObservableCollection<clsPerson>(personList);
+            NotifyPropertyChanged("PersonListFiltrada");
+            selectedPerson = new clsPerson();
+            NotifyPropertyChanged("SelectedPerson");
+            mensajeError = "";
+            NotifyPropertyChanged("MensajeError");
         }
 
 
 
-        public clsPerson SelectedPerson
+        /// <summary>
+        /// Comando para salvar siempre se puede ejecutar, si controlamos cuando se puede o no, no haria falta el mensaje de error
+        /// </summary>
+        private void saveComand_execute()
         {
-            get
+            //Si todos los campos estan rellenos
+            if (!String.IsNullOrEmpty(selectedPerson.name) && !String.IsNullOrEmpty(selectedPerson.lastName) && selectedPerson.birthDate != null && !String.IsNullOrEmpty(selectedPerson.phoneNumber) && !String.IsNullOrEmpty(selectedPerson.address))
             {
-                return selectedPerson;
-            }
+                //Si la id es 0 la persona se inserta
+                if (selectedPerson.id == 0)
+                {
+                    new clsHandlerPersonBL().insertPerson(selectedPerson);
 
-            set
-            {
-                selectedPerson = value;
-                NotifyPropertyChanged("SelectedPerson");
-                deleteComand.RaiseCanExecuteChanged();
-                saveCommand.RaiseCanExecuteChanged();
+                }
+                else
+                {
+                    //Se edita
+                    new clsHandlerPersonBL().updatePerson(selectedPerson);
+                }
+
+                //Actualizamos la lista
+                this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
+                personListFiltrada = new ObservableCollection<clsPerson>(personList);
+                NotifyPropertyChanged("PersonListFiltrada");
+                //Borramos los mensajes
                 mensajeError = "";
                 NotifyPropertyChanged("MensajeError");
+                selectedPerson = new clsPerson();
+                NotifyPropertyChanged("SelectedPerson");
 
             }
+            else
+            {
+                mensajeError = "Los campos no pueden estar vacios";
+                NotifyPropertyChanged("MensajeError");
+            }
+
+
+
         }
 
-
+        /// <summary>
+        /// Ejecuta el comando eliminar
+        /// </summary>
         private async void deleteComand_execute()
         {
 
@@ -227,6 +256,10 @@ namespace Uwp.ViewModels
             NotifyPropertyChanged("MensajeError");
         }
 
+        /// <summary>
+        /// Metodo para saber cuando se puede ejecutar el comando eliminar
+        /// </summary>
+        /// <returns>booleano si se puede ejecutar el comando eliminar</returns>
         private bool deleteComand_canExecute()
         {
             bool personSelected = true;
@@ -237,11 +270,19 @@ namespace Uwp.ViewModels
             {
                 personSelected = false;
             }
+            else if (String.IsNullOrEmpty(selectedPerson.name))
+            {
+                personSelected = false;
+            }
+
 
             return personSelected;
         }
 
-
+        /// <summary>
+        /// Metodo para habilitar o deshabilitar el comando search
+        /// </summary>
+        /// <returns>booleano si se puede ejecutar o no</returns>
         private bool searchComand_canExecute()
         {
             bool searchPerson = true;
@@ -254,6 +295,9 @@ namespace Uwp.ViewModels
             return searchPerson;
         }
 
+        /// <summary>
+        /// Ejecuta el comando buscar
+        /// </summary>
         private void searchComand_execute()
         {
 
@@ -285,6 +329,10 @@ namespace Uwp.ViewModels
             NotifyPropertyChanged("SelectedPerson");
 
         }
+
+
+        #endregion
+
 
     }
 }

@@ -17,11 +17,11 @@ namespace BL.Handler
         #region Methods
         /// <summary>
         /// Precondiciones: Ninguna
-        /// Postcondiciones: LLamara a la funcion updatePerson(clsPerson person) de la capa dal
+        /// Postcondiciones: LLamara a la funcion updateDepartament(clsDepartament departament) de la capa dal
         /// Descripcion: En este metodo se incluirán las reglas de negocios
         /// </summary>
-        /// <param name="person">La persona que pasamos la funcion updatePerson(clsPerson person) de la capa dal</param>
-        /// <returns>int el numero de filas afectadas que devuelve el metodo updatePerson(clsPerson person) de la capa dal</returns>
+        /// <param name="person">El departamento que pasamos a la funcion updateDepartament(clsDepartament departament) de la capa dal</param>
+        /// <returns>int el numero de filas afectadas que devuelve el metodo updateDepartament(clsDepartament departament) de la capa dal</returns>
         public int updateDepartament(clsDepartament departament)
         {
             return new clsHandlerDepartamentDal().updateDepartament(departament);

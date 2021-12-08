@@ -31,10 +31,5 @@ namespace Uwp.Views
             this.InitializeComponent();
 
         }
-
-        private void tbxName_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }

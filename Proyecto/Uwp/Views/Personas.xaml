@@ -56,28 +56,35 @@
         </ListView.ItemTemplate>
 
     </ListView>
-        
-    </RelativePanel>
+
+          <Image RelativePanel.AlignBottomWithPanel="True" Margin="20,10,0,0" Source="/Assets/Herramienta.png" Width="200" Height="200"></Image>
+
+
+        </RelativePanel>
 
         <StackPanel VerticalAlignment="Top" Orientation="Vertical" x:Name="Formulario" Grid.Column="1" Grid.Row="0">
 
-            <TextBlock x:Name="tbName"  HorizontalAlignment="Left" Text="Name" Margin="5"/>
-            <TextBox Name="tbxName" TextChanged="tbxName_TextChanged"  Text="{Binding Path=SelectedPerson.name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+            <TextBlock x:Name="tbName"  HorizontalAlignment="Left" Text="Nombre" Margin="5"/>
+            <TextBox Name="tbxName"  Text="{Binding Path=SelectedPerson.name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
 
-            <TextBlock x:Name="tbLastName"  HorizontalAlignment="Left" Text="LastName"   Margin="5"/>
-            <TextBox Name="tbxLastname" TextChanged="tbxName_TextChanged" Text="{Binding Path=SelectedPerson.lastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  Margin="5"/>
+            <TextBlock x:Name="tbLastName"  HorizontalAlignment="Left" Text="Apellidos"   Margin="5"/>
+            <TextBox Name="tbxLastname"  Text="{Binding Path=SelectedPerson.lastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  Margin="5"/>
 
-            <TextBlock x:Name="tbBirthDate"  HorizontalAlignment="Left" Text="Birth Date" Margin="5"/>
-            <TextBox Name="tbxBirthDate" TextChanged="tbxName_TextChanged" Text="{Binding Path=SelectedPerson.birthDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource parseConverter}}" Margin="5"/>
+            <TextBlock x:Name="tbBirthDate"  HorizontalAlignment="Left" Text="Fecha nacimiento" Margin="5"/>
+            <TextBox Name="tbxBirthDate"  Text="{Binding Path=SelectedPerson.birthDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource parseConverter}}" Margin="5"/>
 
-            <TextBlock x:Name="tbPhoneNumber"  HorizontalAlignment="Left" Text="Phone number"  Margin="5"/>
-            <TextBox Name="tbxPhoneNumber" TextChanged="tbxName_TextChanged" Text="{Binding Path=SelectedPerson.phoneNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+            <TextBlock x:Name="tbPhoneNumber"  HorizontalAlignment="Left" Text="Teléfono"  Margin="5"/>
+            <TextBox Name="tbxPhoneNumber"  Text="{Binding Path=SelectedPerson.phoneNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
 
-            <TextBlock x:Name="tbAddress"  HorizontalAlignment="Left" Text="Address"   Margin="5"/>
-            <TextBox Name="tbxAddress" TextChanged="tbxName_TextChanged" Text="{Binding Path=SelectedPerson.address, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"   Margin="5"/>
+            <TextBlock x:Name="tbAddress"  HorizontalAlignment="Left" Text="Dirección"   Margin="5"/>
+            <TextBox Name="tbxAddress"  Text="{Binding Path=SelectedPerson.address, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"   Margin="5"/>
 
-
+            <TextBlock x:Name="tbImage"  HorizontalAlignment="Left" Text="Imagen"   Margin="5"/>
+            <TextBox Name="tbxImage"  Text="{Binding Path=SelectedPerson.image, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"   Margin="5"/>
+            
+            
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                
                 <ComboBox 
                 Name="departamentos"
                 DisplayMemberPath="name"
@@ -94,8 +101,18 @@
 
             <AppBarButton Icon="Save" Command="{Binding Path=SaveComand}"/>
 
-        </StackPanel> 
-             
+            <Border HorizontalAlignment="Right" Margin="0,30,30,0"  Width="300"  Height="300" BorderBrush="White" BorderThickness="1"
+                               CacheMode="BitmapCache" CornerRadius="80,80,80,80">
+                <Border.Background>
+                    <ImageBrush ImageSource="{Binding Path=SelectedPerson.image}"  Stretch="Fill"></ImageBrush>
+                </Border.Background>
+            </Border>
+
+
+        </StackPanel>
+
+
+
     </Grid>
 
 </Page>

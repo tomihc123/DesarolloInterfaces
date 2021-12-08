@@ -45,7 +45,12 @@ namespace BL.Lists
         #endregion
 
 
-
+        /// <summary>
+        /// Precondiciones: Ninguna
+        /// Postcondiciones: Devuelve lo que devuelve el metodo getPersonsByDepartament(int id) de la capa dal
+        /// </summary>
+        /// <param name="id">La id del departamento</param>
+        /// <returns>List<clsPersona> la lista que devuelve el metodo getPersonsByDepartament(int id) de la capa dal</returns>
         public List<clsPerson> getPersonsByDepartament(int id)
         {
 

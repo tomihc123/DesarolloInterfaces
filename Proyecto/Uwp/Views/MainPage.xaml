@@ -17,8 +17,11 @@
             <NavigationViewItem Name="NavDepartamentos"  Tag="Departamentos" Content="Departamentos" Icon="Folder"/>
         </NavigationView.MenuItems>
 
+        <Frame Name="ContentFrame">
 
-        <Frame Name="ContentFrame"  >
+
+            <Image Source="/Assets/avatares-personas-felices_52683-34515.jpg" Width="750" Height="750"></Image>
+
         </Frame>
 
     </NavigationView>

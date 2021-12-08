@@ -41,6 +41,7 @@ namespace Entidades
         public clsPerson()
         {
             birthDate = DateTime.Now;
+            iddepartamento = 2;
         }
 
         //Constructor con parametros

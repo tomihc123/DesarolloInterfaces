@@ -28,7 +28,7 @@
 
                 <TextBox x:ConnectionId='10' MinWidth="300" x:Name="busqueda" Text="{Binding Path=NombreBusqueda, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
-                <AppBarButton x:ConnectionId='11'  Name="btnSearch" Icon="Find"  Command="{Binding Path=SearchComand}"/>
+                <AppBarButton x:ConnectionId='11'  Name="btnSearch" Icon="Find"/>
 
                 <AppBarButton x:ConnectionId='12'   Name="btnDelete" Icon="Delete" Command="{Binding Path=DeleteCommand}"/>
 
@@ -50,17 +50,22 @@
 
             </ListView>
 
+            <Image RelativePanel.AlignBottomWithPanel="True" Margin="20,625,0,0" Source="/Assets/Herramienta.png" Width="200" Height="200"></Image>
+
+
         </RelativePanel>
 
         <StackPanel x:ConnectionId='3' VerticalAlignment="Top" Orientation="Vertical" x:Name="Formulario" Grid.Column="1" Grid.Row="0">
 
-            <TextBlock x:ConnectionId='4' x:Name="tbName"  HorizontalAlignment="Left" Text="Name" Margin="5"/>
+            <TextBlock x:ConnectionId='4' x:Name="tbName"  HorizontalAlignment="Left" Text="Nombre" Margin="5"/>
             <TextBox x:ConnectionId='5' Name="tbxName"  Text="{Binding Path=DepartamentSeleccionado.name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
 
 
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                
+
+                <TextBlock   HorizontalAlignment="Left" Text="Personas en el departamento" Margin="5"/>
+
                 <ComboBox Margin="5" ItemsSource="{Binding Path=PersonasPorDepartamento}">
 
                     <ComboBox.ItemTemplate>

@@ -187,7 +187,13 @@ namespace Dal.Lists
             return personList;
         }
 
-
+        /// <summary>
+        /// Precondiciones: La id debe existir en la base de datos
+        /// Postcondiciones: Devolvera una lista de personas cuyo departamento es la id pasada por parametro
+        /// Descripcion: Usa sentencias sql para obtener los resultados
+        /// </summary>
+        /// <param name="id">La id del departamento</param>
+        /// <returns>List<clsPerson> la lista de personas</returns>
         public List<clsPerson> getPersonsByDepartament(int id)
         {
 

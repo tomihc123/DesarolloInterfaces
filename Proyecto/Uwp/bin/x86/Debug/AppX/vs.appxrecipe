@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-12-07T20:42:38.869</Modified>
+      <Modified>2021-12-08T20:43:18.395</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Uwp.exe">
       <PackagePath>entrypoint\Uwp.exe</PackagePath>
-      <Modified>2021-12-07T20:42:38.446</Modified>
+      <Modified>2021-12-08T20:43:17.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\microsoft.bcl.asyncinterfaces\1.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -112,23 +112,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\BL\bin\Debug\netstandard2.0\BL.dll">
       <PackagePath>BL.dll</PackagePath>
-      <Modified>2021-12-07T19:53:45.158</Modified>
+      <Modified>2021-12-08T18:39:35.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Entidades\bin\Debug\netstandard2.0\Entidades.dll">
       <PackagePath>Entidades.dll</PackagePath>
-      <Modified>2021-12-07T15:40:22.832</Modified>
+      <Modified>2021-12-08T17:25:26.935</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\BL\bin\Debug\netstandard2.0\Dal.dll">
       <PackagePath>Dal.dll</PackagePath>
-      <Modified>2021-12-07T19:31:39.584</Modified>
+      <Modified>2021-12-08T18:39:35.248</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-02T02:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-12-07T15:39:19.779</Modified>
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\Herramienta.png">
+      <PackagePath>Assets\Herramienta.png</PackagePath>
+      <Modified>2021-12-08T20:27:24.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -164,25 +164,33 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-12-07T15:39:19.776</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Assets\avatares-personas-felices_52683-34515.jpg">
+      <PackagePath>Assets\avatares-personas-felices_52683-34515.jpg</PackagePath>
+      <Modified>2021-12-08T20:14:07.596</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2021-12-07T15:39:19.779</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Uwp.xr.xml">
       <PackagePath>Uwp.xr.xml</PackagePath>
-      <Modified>2021-12-07T19:43:36.584</Modified>
+      <Modified>2021-12-08T20:40:02.610</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-12-07T20:42:38.377</Modified>
+      <Modified>2021-12-08T20:43:17.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Views\Departamentos.xbf">
       <PackagePath>Views\Departamentos.xbf</PackagePath>
-      <Modified>2021-12-07T20:42:38.378</Modified>
+      <Modified>2021-12-08T20:43:17.860</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2021-12-07T20:42:38.378</Modified>
+      <Modified>2021-12-08T20:43:17.860</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Views\Personas.xbf">
       <PackagePath>Views\Personas.xbf</PackagePath>
-      <Modified>2021-12-07T20:42:38.377</Modified>
+      <Modified>2021-12-08T20:43:17.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -190,11 +198,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-12-07T15:40:29.643</Modified>
+      <Modified>2021-12-08T20:29:06.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Core\Uwp.exe">
       <PackagePath>Uwp.exe</PackagePath>
-      <Modified>2021-12-07T20:42:38.865</Modified>
+      <Modified>2021-12-08T20:43:18.383</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
