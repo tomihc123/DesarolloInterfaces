@@ -296,6 +296,7 @@ namespace Uwp.ViewModels
         /// </summary>
         private async void deleteComand_execute()
         {
+            bool seElimino = false;
 
             ContentDialog dialog = new ContentDialog()
             {
@@ -309,18 +310,31 @@ namespace Uwp.ViewModels
             ContentDialogResult result = await dialog.ShowAsync();
             if (result == ContentDialogResult.Primary)
             {
-                ///Eliminamos
-                new clsHandlerDepartamentBL().deleteDepartament(DepartamentSeleccionado.id);
-                ///Actualizamos la lista
-                this.listDeparments = new ObservableCollection<clsDepartament>(new clsDepartamentListBL().getDepartaments());
-                this.listDepartamentsFiltrada = new ObservableCollection<clsDepartament>(listDeparments);
-                NotifyPropertyChanged("DepartamentsFiltrada");
+                if(listPersonByDepartament.Count() == 0)
+                {
+                    ///Eliminamos
+                    new clsHandlerDepartamentBL().deleteDepartament(DepartamentSeleccionado.id);
+                    ///Actualizamos la lista
+                    this.listDeparments = new ObservableCollection<clsDepartament>(new clsDepartamentListBL().getDepartaments());
+                    this.listDepartamentsFiltrada = new ObservableCollection<clsDepartament>(listDeparments);
+                    NotifyPropertyChanged("DepartamentsFiltrada");
+                    seElimino = true;
+                }
+
 
             }
 
-            ///Mensajes de error vacios
-            mensajeError = "";
-            NotifyPropertyChanged("MensajeError");
+            if(seElimino)
+            {
+                ///Mensajes de error vacios
+                mensajeError = "";
+                NotifyPropertyChanged("MensajeError");
+            } else
+            {
+                mensajeError = "No se pudo eliminar porque hay personas en el departamento";
+                NotifyPropertyChanged("MensajeError");
+            }
+
         }
 
         /// <summary>

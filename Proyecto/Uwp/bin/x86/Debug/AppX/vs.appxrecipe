@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-12-08T20:43:18.395</Modified>
+      <Modified>2021-12-08T21:02:06.509</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Uwp.exe">
       <PackagePath>entrypoint\Uwp.exe</PackagePath>
-      <Modified>2021-12-08T20:43:17.947</Modified>
+      <Modified>2021-12-08T21:02:06.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\.nuget\packages\microsoft.bcl.asyncinterfaces\1.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -178,19 +178,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-12-08T20:43:17.859</Modified>
+      <Modified>2021-12-08T21:02:05.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Views\Departamentos.xbf">
       <PackagePath>Views\Departamentos.xbf</PackagePath>
-      <Modified>2021-12-08T20:43:17.860</Modified>
+      <Modified>2021-12-08T21:02:05.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2021-12-08T20:43:17.860</Modified>
+      <Modified>2021-12-08T21:02:05.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Views\Personas.xbf">
       <PackagePath>Views\Personas.xbf</PackagePath>
-      <Modified>2021-12-08T20:43:17.859</Modified>
+      <Modified>2021-12-08T21:02:05.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -202,7 +202,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\bin\x86\Debug\Core\Uwp.exe">
       <PackagePath>Uwp.exe</PackagePath>
-      <Modified>2021-12-08T20:43:18.383</Modified>
+      <Modified>2021-12-08T21:02:06.505</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
