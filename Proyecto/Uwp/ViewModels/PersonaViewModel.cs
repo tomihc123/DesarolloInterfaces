@@ -38,17 +38,51 @@ namespace Uwp.ViewModels
         #region Constructor
         public PersonaViewModel()
         {
-            this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
-            this.listDeparments = new ObservableCollection<clsDepartament>(new clsDepartamentListBL().getDepartaments());
-            this.deleteComand = new DelegateCommand(deleteComand_execute, deleteComand_canExecute);
-            this.searchComand = new DelegateCommand(searchComand_execute, searchComand_canExecute);
-            this.saveCommand = new DelegateCommand(saveComand_execute);
-            this.addComand = new DelegateCommand(addComand_execute);
-            this.personListFiltrada = new ObservableCollection<clsPerson>(personList);
-            selectedPerson = new clsPerson();
+
+            try
+            {
+                this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
+                this.listDeparments = new ObservableCollection<clsDepartament>(new clsDepartamentListBL().getDepartaments());
+                this.deleteComand = new DelegateCommand(deleteComand_execute, deleteComand_canExecute);
+                this.searchComand = new DelegateCommand(searchComand_execute, searchComand_canExecute);
+                this.saveCommand = new DelegateCommand(saveComand_executeAsync);
+                this.addComand = new DelegateCommand(addComand_executeAsync);
+                this.personListFiltrada = new ObservableCollection<clsPerson>(personList);
+                selectedPerson = new clsPerson();
+
+            } catch(Exception)
+            {
+
+                mostrarError();
+                mensajeError = "Algo ha ocurrido";
+                NotifyPropertyChanged("MensajeError");
+
+            }
+
         }
 
         #endregion
+
+
+        /// <summary>
+        /// Muestra un dialogo de que ha habido un error en caso de que se haya producido una excepcion
+        /// </summary>
+        private async void mostrarError()
+        {
+
+            ContentDialog error = new ContentDialog()
+            {
+                Title = "Error",
+                Content = "An inexpected error has ocurred",
+                PrimaryButtonText = "Ok",
+
+            };
+
+            ContentDialogResult errorResult = await error.ShowAsync();
+
+        }
+
+
 
 
         #region Properties
@@ -168,19 +202,29 @@ namespace Uwp.ViewModels
 
         #region Comand
 
+
         /// <summary>
         /// Comando para añadir una persona, genera una persona selecciona por defecto para poner los campos vacios
         /// </summary>
-        private void addComand_execute()
+        private void addComand_executeAsync()
         {
-            //En caso de que haya alguna persona seleccionada en la lista la quita
-            this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
-            personListFiltrada = new ObservableCollection<clsPerson>(personList);
-            NotifyPropertyChanged("PersonListFiltrada");
-            selectedPerson = new clsPerson();
-            NotifyPropertyChanged("SelectedPerson");
-            mensajeError = "";
-            NotifyPropertyChanged("MensajeError");
+            try
+            {
+                //En caso de que haya alguna persona seleccionada en la lista la quita
+                this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
+                personListFiltrada = new ObservableCollection<clsPerson>(personList);
+                NotifyPropertyChanged("PersonListFiltrada");
+                selectedPerson = new clsPerson();
+                NotifyPropertyChanged("SelectedPerson");
+                mensajeError = "";
+                NotifyPropertyChanged("MensajeError");
+
+            } catch(Exception)
+            {
+
+                mostrarError();
+
+            }
         }
 
 
@@ -188,32 +232,43 @@ namespace Uwp.ViewModels
         /// <summary>
         /// Comando para salvar siempre se puede ejecutar, si controlamos cuando se puede o no, no haria falta el mensaje de error
         /// </summary>
-        private void saveComand_execute()
+        private void saveComand_executeAsync()
         {
             //Si todos los campos estan rellenos
             if (!String.IsNullOrEmpty(selectedPerson.name) && !String.IsNullOrEmpty(selectedPerson.lastName) && selectedPerson.birthDate != null && !String.IsNullOrEmpty(selectedPerson.phoneNumber) && !String.IsNullOrEmpty(selectedPerson.address))
             {
-                //Si la id es 0 la persona se inserta
-                if (selectedPerson.id == 0)
+
+                try
                 {
-                    new clsHandlerPersonBL().insertPerson(selectedPerson);
+
+
+                    //Si la id es 0 la persona se inserta
+                    if (selectedPerson.id == 0)
+                    {
+                        new clsHandlerPersonBL().insertPerson(selectedPerson);
+
+                    }
+                    else
+                    {
+                        //Se edita
+                        new clsHandlerPersonBL().updatePerson(selectedPerson);
+                    }
+
+                    //Actualizamos la lista
+                    this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
+                    personListFiltrada = new ObservableCollection<clsPerson>(personList);
+                    NotifyPropertyChanged("PersonListFiltrada");
+                    //Borramos los mensajes
+                    mensajeError = "";
+                    NotifyPropertyChanged("MensajeError");
+                    selectedPerson = new clsPerson();
+                    NotifyPropertyChanged("SelectedPerson");
+
+                } catch(Exception) {
+
+                    mostrarError();
 
                 }
-                else
-                {
-                    //Se edita
-                    new clsHandlerPersonBL().updatePerson(selectedPerson);
-                }
-
-                //Actualizamos la lista
-                this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
-                personListFiltrada = new ObservableCollection<clsPerson>(personList);
-                NotifyPropertyChanged("PersonListFiltrada");
-                //Borramos los mensajes
-                mensajeError = "";
-                NotifyPropertyChanged("MensajeError");
-                selectedPerson = new clsPerson();
-                NotifyPropertyChanged("SelectedPerson");
 
             }
             else
@@ -244,14 +299,29 @@ namespace Uwp.ViewModels
             ContentDialogResult result = await dialog.ShowAsync();
             if (result == ContentDialogResult.Primary)
             {
-                new clsHandlerPersonBL().deletePerson(SelectedPerson.id);
-                this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
-                personListFiltrada = new ObservableCollection<clsPerson>(personList);
-                NotifyPropertyChanged("PersonListFiltrada");
+
+                try
+                {
+                    new clsHandlerPersonBL().deletePerson(SelectedPerson.id);
+                    this.personList = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersons());
+                    personListFiltrada = new ObservableCollection<clsPerson>(personList);
+                    NotifyPropertyChanged("PersonListFiltrada");
+
+                } catch(Exception)
+                {
+
+
+                    mostrarError();
+
+
+                }
+
+
+                selectedPerson = new clsPerson();
+                NotifyPropertyChanged("SelectedPerson");
+
             }
 
-            selectedPerson = new clsPerson();
-            NotifyPropertyChanged("SelectedPerson");
             mensajeError = "";
             NotifyPropertyChanged("MensajeError");
         }

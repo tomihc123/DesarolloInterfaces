@@ -39,15 +39,25 @@ namespace Uwp.ViewModels
         public DepartamentoViewModel()
         {
 
-            this.listDeparments = new ObservableCollection<clsDepartament>(new clsDepartamentListBL().getDepartaments());
-            this.listDepartamentsFiltrada = new ObservableCollection<clsDepartament>(listDeparments);
+            try
+            {
 
-            departamentSeleccionado = new clsDepartament();
+                this.listDeparments = new ObservableCollection<clsDepartament>(new clsDepartamentListBL().getDepartaments());
+                this.listDepartamentsFiltrada = new ObservableCollection<clsDepartament>(listDeparments);
 
-            this.deleteComand = new DelegateCommand(deleteComand_execute, deleteComand_canExecute);
-            this.searchComand = new DelegateCommand(searchComand_execute, searchComand_canExecute);
-            this.saveCommand = new DelegateCommand(saveComand_execute);
-            this.addComand = new DelegateCommand(addComand_execute);
+                departamentSeleccionado = new clsDepartament();
+
+                this.deleteComand = new DelegateCommand(deleteComand_execute, deleteComand_canExecute);
+                this.searchComand = new DelegateCommand(searchComand_execute, searchComand_canExecute);
+                this.saveCommand = new DelegateCommand(saveComand_execute);
+                this.addComand = new DelegateCommand(addComand_execute);
+
+            } catch(Exception)
+            {
+                mostrarError();
+                mensajeError = "Algo ha ocurrido";
+                NotifyPropertyChanged("MensajeError");
+            }
 
 
 
@@ -124,8 +134,14 @@ namespace Uwp.ViewModels
                 //En caso de que no sea null podemos buscar las personas de ese departamento
                 if (departamentSeleccionado != null)
                 {
-                    listPersonByDepartament = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersonsByDepartament(departamentSeleccionado.id));
-                    NotifyPropertyChanged("PersonasPorDepartamento");
+                    try
+                    {
+                        listPersonByDepartament = new ObservableCollection<clsPerson>(new clsPersonListBL().getPersonsByDepartament(departamentSeleccionado.id));
+                        NotifyPropertyChanged("PersonasPorDepartamento");
+                    } catch(Exception)
+                    {
+                        mostrarError();
+                    }
                 }
                 //Cada vez que seleccionamos se borra el mensaje anterior
                 mensajeError = "";
@@ -176,7 +192,23 @@ namespace Uwp.ViewModels
 
         #endregion
 
+        /// <summary>
+        /// Muestra un dialogo de que ha habido un error en caso de que se haya producido una excepcion
+        /// </summary>
+        private async void mostrarError()
+        {
 
+            ContentDialog error = new ContentDialog()
+            {
+                Title = "Error",
+                Content = "An inexpected error has ocurred",
+                PrimaryButtonText = "Ok",
+
+            };
+
+            ContentDialogResult errorResult = await error.ShowAsync();
+
+        }
 
 
         #region Comandos
@@ -185,16 +217,29 @@ namespace Uwp.ViewModels
         /// <summary>
         /// Genera un departamento seleccionado con valores por defecto para que los campos  de texto se vacien
         /// </summary>
-        private void addComand_execute()
+        private  void addComand_execute()
         {
-            //Quitamos si hay algun departamento seleccionado de la lista
-            this.listDeparments = new ObservableCollection<clsDepartament>(new clsDepartamentListBL().getDepartaments());
-            listDepartamentsFiltrada = new ObservableCollection<clsDepartament>(listDeparments);
-            NotifyPropertyChanged("DepartamentsFiltrada");
-            //Un nuevo departamento
-            DepartamentSeleccionado = new clsDepartament();
-            mensajeError = "";
-            NotifyPropertyChanged("MensajeError");
+
+            try
+            {
+
+                //Quitamos si hay algun departamento seleccionado de la lista
+                this.listDeparments = new ObservableCollection<clsDepartament>(new clsDepartamentListBL().getDepartaments());
+                listDepartamentsFiltrada = new ObservableCollection<clsDepartament>(listDeparments);
+                NotifyPropertyChanged("DepartamentsFiltrada");
+                //Un nuevo departamento
+                DepartamentSeleccionado = new clsDepartament();
+                mensajeError = "";
+                NotifyPropertyChanged("MensajeError");
+
+            } catch(Exception)
+
+            {
+
+                mostrarError();
+
+            }
+
         }
 
         /// <summary>
@@ -206,28 +251,39 @@ namespace Uwp.ViewModels
             ///Si se ha introducido algun nombre
             if (!String.IsNullOrEmpty(departamentSeleccionado.name))
             {
-                ///Si la id es 0 quiere decir que la estamos insertando
-                if (departamentSeleccionado.id == 0)
+
+                try
                 {
-                    new clsHandlerDepartamentBL().insertDepartament(departamentSeleccionado);
+
+                    ///Si la id es 0 quiere decir que la estamos insertando
+                    if (departamentSeleccionado.id == 0)
+                    {
+                        new clsHandlerDepartamentBL().insertDepartament(departamentSeleccionado);
+
+                    }
+                    else
+                    {
+                        ///Existe y es para editar
+                        new clsHandlerDepartamentBL().updateDepartament(departamentSeleccionado);
+                    }
+
+                    ///Actualizamos la lista
+                    this.listDeparments = new ObservableCollection<clsDepartament>(new clsDepartamentListBL().getDepartaments());
+                    listDepartamentsFiltrada = new ObservableCollection<clsDepartament>(listDeparments);
+                    NotifyPropertyChanged("DepartamentsFiltrada");
+                    ///Seteamos los campos de texto
+                    departamentSeleccionado = new clsDepartament();
+                    NotifyPropertyChanged("DepartamentSeleccionado");
+                    ///Mnesajes de error vacios
+                    mensajeError = "";
+                    NotifyPropertyChanged("MensajeError");
+
+                } catch(Exception)
+                {
+
+                    mostrarError();
 
                 }
-                else
-                {
-                    ///Existe y es para editar
-                    new clsHandlerDepartamentBL().updateDepartament(departamentSeleccionado);
-                }
-
-                ///Actualizamos la lista
-                this.listDeparments = new ObservableCollection<clsDepartament>(new clsDepartamentListBL().getDepartaments());
-                listDepartamentsFiltrada = new ObservableCollection<clsDepartament>(listDeparments);
-                NotifyPropertyChanged("DepartamentsFiltrada");
-                ///Seteamos los campos de texto
-                departamentSeleccionado = new clsDepartament();
-                NotifyPropertyChanged("DepartamentSeleccionado");
-                ///Mnesajes de error vacios
-                mensajeError = "";
-                NotifyPropertyChanged("MensajeError");
 
             }
             else
@@ -296,7 +352,6 @@ namespace Uwp.ViewModels
         /// </summary>
         private async void deleteComand_execute()
         {
-            bool seElimino = false;
 
             ContentDialog dialog = new ContentDialog()
             {
@@ -312,27 +367,36 @@ namespace Uwp.ViewModels
             {
                 if(listPersonByDepartament.Count() == 0)
                 {
-                    ///Eliminamos
-                    new clsHandlerDepartamentBL().deleteDepartament(DepartamentSeleccionado.id);
-                    ///Actualizamos la lista
-                    this.listDeparments = new ObservableCollection<clsDepartament>(new clsDepartamentListBL().getDepartaments());
-                    this.listDepartamentsFiltrada = new ObservableCollection<clsDepartament>(listDeparments);
-                    NotifyPropertyChanged("DepartamentsFiltrada");
-                    seElimino = true;
+
+                    try
+                    {
+
+                        ///Eliminamos
+                        new clsHandlerDepartamentBL().deleteDepartament(DepartamentSeleccionado.id);
+                        ///Actualizamos la lista
+                        this.listDeparments = new ObservableCollection<clsDepartament>(new clsDepartamentListBL().getDepartaments());
+                        this.listDepartamentsFiltrada = new ObservableCollection<clsDepartament>(listDeparments);
+                        NotifyPropertyChanged("DepartamentsFiltrada");
+
+                    } catch(Exception)
+                    {
+                        mostrarError();
+
+                    }
+
+                    mensajeError = "";
+                    NotifyPropertyChanged("MensajeError");
+
+                } else
+                {
+
+                    mensajeError = "No se pudo eliminar porque hay personas en el departamento";
+                    NotifyPropertyChanged("MensajeError");
+
+
                 }
 
 
-            }
-
-            if(seElimino)
-            {
-                ///Mensajes de error vacios
-                mensajeError = "";
-                NotifyPropertyChanged("MensajeError");
-            } else
-            {
-                mensajeError = "No se pudo eliminar porque hay personas en el departamento";
-                NotifyPropertyChanged("MensajeError");
             }
 
         }

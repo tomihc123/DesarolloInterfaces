@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Data;
 
 namespace Uwp.Parsers
@@ -11,6 +12,14 @@ namespace Uwp.Parsers
     class ParseData : IValueConverter
     {
 
+        /// <summary>
+        /// Convierte a fecha
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="targetType"></param>
+        /// <param name="parameter"></param>
+        /// <param name="language"></param>
+        /// <returns></returns>
         public Object Convert(object value, Type targetType, object parameter, string language)
         {
             DateTime date = (DateTime)value;
@@ -25,12 +34,33 @@ namespace Uwp.Parsers
             return smallDate;
         }
 
+        /// <summary>
+        /// Convierte a fecha
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="targetType"></param>
+        /// <param name="parameter"></param>
+        /// <param name="language"></param>
+        /// <returns></returns>
         public object ConvertBack(object value, Type targetType, object parameter, string language)
 
         {
-            String smallDate = value as String;
-            DateTime date = DateTime.Parse(smallDate);
-            return date;
+
+            DateTime dateTime = new DateTime();
+
+            try
+            {
+                String smallDate = value as String;
+                dateTime = DateTime.Parse(smallDate);
+
+            } catch(Exception)
+            {
+             
+
+              }
+      
+               return dateTime;       
+
         }
 
 

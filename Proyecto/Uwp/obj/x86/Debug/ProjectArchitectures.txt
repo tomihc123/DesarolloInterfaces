@@ -1,1 +1,1 @@
-C:\Users\TxHxTxHxT\Desktop\DesarolloInterfaces\Proyecto\Uwp\Uwp.csproj;x86
+C:\Users\thuecas\Desktop\DesarolloInterfaces\Proyecto\Uwp\Uwp.csproj;x86

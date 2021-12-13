@@ -12,6 +12,15 @@ CADA DAL
 
 	-Handlers 
 		
+		clsHandlerDepartamentDal
+
+		- insertDepartament(clsDepartament) Inserta un departamento
+		
+		- updateDepartament(clsDepartament) Actualiza un departamento
+		 
+		- deleteDepartament(clsDepartament) Elimina un departamento
+
+
 		clsHandlerPersonDal En esta clase se incluiran los metodos para el manejo de las personas
 	
 			- insertPerson(clsPerson clsPerson)
@@ -42,6 +51,15 @@ CAPA BL
 	
 	-Handlers 
 		
+		clsHandlerDepartamentBL
+
+		- insertDepartament(clsDepartament) Inserta un departamento
+		
+		- updateDepartament(clsDepartament) Actualiza un departamento
+		 
+		- deleteDepartament(clsDepartament) Elimina un departamento
+	
+
 		clsHandlerPersonBL En esta clase se incluiran los metodos que llaman a los metodos de la dal de handler
 	
 		- insertPerson(clsPerson clsPerson)
@@ -52,7 +70,7 @@ CAPA BL
 
 	- List
 		
-		clsPersonListDal En esta clase se incluiran los metodos que llaman a los metodos de la dal para de list
+		clsPersonListBL En esta clase se incluiran los metodos que llaman a los metodos de la dalde list
 		
 		- getPerson(int id) Obtiene una persona en concreto
 		
@@ -80,5 +98,30 @@ ASP
 
 	- Models Para ofrecer modelos a la vista
 
-	-Views las vistas
+         -Views las vistas
 
+UWP
+
+	Viws
+		
+		MainPage Ofrece una vista de inicio
+		Personas Ofrece todas las personas y las opciones para trabajar con ellas
+		Departamentos Ofrece todos los departamentos y las opciones para trabajar con ellas
+
+
+	ViewModels
+
+	
+		PersonViewModel
+		DepartamentoViewModel
+
+			Utiles En esta carpeta se incluiran clases utiles
+			
+			DelegateCommand
+			clsVMBase
+
+	Parsers
+	
+		Para convertir a fecha	
+
+		

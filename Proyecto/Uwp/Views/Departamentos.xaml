@@ -50,7 +50,7 @@
 
             </ListView>
 
-            <Image RelativePanel.AlignBottomWithPanel="True" Margin="20,625,0,0" Source="/Assets/Herramienta.png" Width="200" Height="200"></Image>
+            <Image RelativePanel.AlignBottomWithPanel="True" Margin="20,675,0,0" Source="/Assets/Herramienta.png" Width="200" Height="200"></Image>
 
 
         </RelativePanel>

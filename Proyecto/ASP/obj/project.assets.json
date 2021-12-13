@@ -7215,25 +7215,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TxHxTxHxT\\.nuget\\packages\\": {},
+    "C:\\Users\\thuecas\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\ASP\\ASP.csproj",
+      "projectUniqueName": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\ASP\\ASP.csproj",
       "projectName": "ASP",
-      "projectPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\ASP\\ASP.csproj",
-      "packagesPath": "C:\\Users\\TxHxTxHxT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\ASP\\obj\\",
+      "projectPath": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\ASP\\ASP.csproj",
+      "packagesPath": "C:\\Users\\thuecas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\ASP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\TxHxTxHxT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thuecas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -7249,11 +7249,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\BL\\BL.csproj": {
-              "projectPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\BL\\BL.csproj"
+            "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\BL\\BL.csproj"
             },
-            "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\TxHxTxHxT\\Desktop\\DesarolloInterfaces\\Proyecto\\Entidades\\Entidades.csproj"
+            "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\thuecas\\Desktop\\DesarolloInterfaces\\Proyecto\\Entidades\\Entidades.csproj"
             }
           }
         }
@@ -7295,7 +7295,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

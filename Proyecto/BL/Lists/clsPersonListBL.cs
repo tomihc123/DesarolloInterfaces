@@ -42,8 +42,6 @@ namespace BL.Lists
         {
             return new clsPersonListDal().getPerson(id);
         }
-        #endregion
-
 
         /// <summary>
         /// Precondiciones: Ninguna
@@ -57,6 +55,11 @@ namespace BL.Lists
             return new clsPersonListDal().getPersonsByDepartament(id);
 
         }
+
+        #endregion
+
+
+
 
 
     }

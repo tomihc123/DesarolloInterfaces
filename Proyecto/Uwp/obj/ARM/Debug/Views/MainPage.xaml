@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Uwp.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Uwp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <NavigationView x:ConnectionId='2' IsBackButtonVisible="Collapsed" PaneDisplayMode="Top" IsSettingsVisible="False" Name="NavigationPrinciapl"                                                           >
+
+
+        <NavigationView.MenuItems >
+            <NavigationViewItem x:ConnectionId='3' Name="NavPersonas" Tag="Personas" Content="Personas" Icon="People" />
+            <NavigationViewItem x:ConnectionId='4' Name="NavDepartamentos"  Tag="Departamentos" Content="Departamentos" Icon="Folder"/>
+        </NavigationView.MenuItems>
+
+        <Frame x:ConnectionId='5' Name="ContentFrame">
+
+
+            <Image Source="/Assets/avatares-personas-felices_52683-34515.jpg" Width="750" Height="750"></Image>
+
+        </Frame>
+
+    </NavigationView>
+
+</Page>
+
+
